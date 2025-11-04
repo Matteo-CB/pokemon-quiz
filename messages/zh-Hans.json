@@ -1,0 +1,144 @@
+{
+  "HeroButtons": {
+    "dashboard": "仪表板",
+    "quiz": "进行测验"
+  },
+  "ListPlayers": {
+    "title": "前三名玩家",
+    "score": "分数"
+  },
+  "StarterPicker": {
+    "chooseStarter": "选择你的初始宝可梦："
+  },
+  "FormSignIn": {
+    "title": "创建账户",
+    "loading": "正在加载宝可梦...",
+    "email": {
+      "label": "邮箱",
+      "placeholder": "你的@email.com"
+    },
+    "name": {
+      "label": "名字",
+      "placeholder": "你的名字"
+    },
+    "password": {
+      "label": "密码",
+      "placeholder": "至少8个字符"
+    },
+    "starter": {
+      "choose": "选择你的初始宝可梦：",
+      "shinyInfo": "每只宝可梦有1/500的几率是闪光。如果你幸运，你会在名字旁边看到✨！"
+    },
+    "buttons": {
+      "submit": "注册",
+      "loading": "注册中..."
+    },
+    "login": {
+      "prompt": "已经有账户？",
+      "link": "登录"
+    },
+    "errors": {
+      "missingFields": "邮箱和密码是必填项。",
+      "passwordTooShort": "密码至少需要8个字符。",
+      "noStarter": "请选择你的初始宝可梦！",
+      "signupFailed": "无法注册。",
+      "server": "发生错误，请稍后再试。"
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "重置密码",
+    "success": "密码修改成功！",
+    "newPassword": "新密码",
+    "button": "重置",
+    "errors": {
+      "failed": "无法重置密码。"
+    }
+  },
+  "LoginPage": {
+    "title": "登录",
+    "email": {
+      "label": "邮箱",
+      "placeholder": "你的@email.com"
+    },
+    "password": {
+      "label": "密码",
+      "placeholder": "你的密码",
+      "forgot": "忘记密码？"
+    },
+    "buttons": {
+      "submit": "登录",
+      "loading": "登录中..."
+    },
+    "signup": {
+      "prompt": "还没有账户？",
+      "link": "注册"
+    },
+    "errors": {
+      "invalidCredentials": "邮箱或密码错误。"
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "忘记密码",
+    "success": "如果账户存在，链接已发送。",
+    "email": {
+      "placeholder": "你的邮箱"
+    },
+    "button": "发送链接"
+  },
+  "DashboardPage": {
+    "title": "仪表板",
+    "accessDenied": "访问被拒绝",
+    "userNotFound": "未找到用户",
+    "currentScore": "当前分数："
+  },
+  "ProfileForm": {
+    "title": "个人资料",
+    "pseudo": "用户名",
+    "bio": "简介",
+    "characters": "字符",
+    "save": "保存"
+  },
+  "PokemonGrid": {
+    "title": "你的宝可梦"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "选择一个宝可梦",
+    "changeAvatar": "更换头像 ({name})"
+  },
+  "PlayerProfile": {
+    "title": "{name}的个人资料",
+    "score": "分数：",
+    "pokemons": "宝可梦"
+  },
+  "PokemonOfTheDay": {
+    "title": "今日的宝可梦",
+    "stats": {
+      "hp": "HP",
+      "attack": "攻击",
+      "defense": "防御",
+      "special-attack": "特攻",
+      "special-defense": "特防",
+      "speed": "速度"
+    },
+    "types": {
+      "fire": "火",
+      "water": "水",
+      "grass": "草",
+      "electric": "电",
+      "psychic": "超能力",
+      "ice": "冰",
+      "dragon": "龙",
+      "dark": "恶",
+      "fairy": "妖精",
+      "normal": "一般",
+      "fighting": "格斗",
+      "flying": "飞行",
+      "poison": "毒",
+      "ground": "地面",
+      "rock": "岩石",
+      "bug": "虫",
+      "ghost": "幽灵",
+      "steel": "钢"
+    }
+  }
+}

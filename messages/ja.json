@@ -1,0 +1,144 @@
+{
+  "HeroButtons": {
+    "dashboard": "ダッシュボード",
+    "quiz": "クイズをする"
+  },
+  "ListPlayers": {
+    "title": "トップ3プレイヤー",
+    "score": "スコア"
+  },
+  "StarterPicker": {
+    "chooseStarter": "最初のポケモンを選んでください:"
+  },
+  "FormSignIn": {
+    "title": "アカウントを作成",
+    "loading": "ポケモンを読み込み中...",
+    "email": {
+      "label": "メール",
+      "placeholder": "あなた@email.com"
+    },
+    "name": {
+      "label": "名前",
+      "placeholder": "あなたの名前"
+    },
+    "password": {
+      "label": "パスワード",
+      "placeholder": "8文字以上"
+    },
+    "starter": {
+      "choose": "最初のポケモンを選んでください:",
+      "shinyInfo": "各ポケモンは500分の1の確率で色違いになります。運が良ければ、名前の横に✨が表示されます！"
+    },
+    "buttons": {
+      "submit": "登録",
+      "loading": "登録中..."
+    },
+    "login": {
+      "prompt": "すでにアカウントをお持ちですか？",
+      "link": "ログイン"
+    },
+    "errors": {
+      "missingFields": "メールとパスワードは必須です。",
+      "passwordTooShort": "パスワードは8文字以上でなければなりません。",
+      "noStarter": "最初のポケモンを選んでください！",
+      "signupFailed": "登録できませんでした。",
+      "server": "エラーが発生しました。後でもう一度お試しください。"
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "パスワードをリセット",
+    "success": "パスワードが正常に変更されました！",
+    "newPassword": "新しいパスワード",
+    "button": "リセット",
+    "errors": {
+      "failed": "パスワードをリセットできませんでした。"
+    }
+  },
+  "LoginPage": {
+    "title": "ログイン",
+    "email": {
+      "label": "メール",
+      "placeholder": "あなた@email.com"
+    },
+    "password": {
+      "label": "パスワード",
+      "placeholder": "あなたのパスワード",
+      "forgot": "パスワードを忘れましたか？"
+    },
+    "buttons": {
+      "submit": "ログイン",
+      "loading": "ログイン中..."
+    },
+    "signup": {
+      "prompt": "まだアカウントをお持ちではありませんか？",
+      "link": "登録"
+    },
+    "errors": {
+      "invalidCredentials": "メールまたはパスワードが正しくありません。"
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "パスワードを忘れた",
+    "success": "アカウントが存在する場合、リンクが送信されました。",
+    "email": {
+      "placeholder": "あなたのメール"
+    },
+    "button": "リンクを送信"
+  },
+  "DashboardPage": {
+    "title": "ダッシュボード",
+    "accessDenied": "アクセスが拒否されました",
+    "userNotFound": "ユーザーが見つかりません",
+    "currentScore": "現在のスコア:"
+  },
+  "ProfileForm": {
+    "title": "プロフィール",
+    "pseudo": "ユーザー名",
+    "bio": "自己紹介",
+    "characters": "文字",
+    "save": "保存"
+  },
+  "PokemonGrid": {
+    "title": "あなたのポケモン"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "ポケモンを選んでください",
+    "changeAvatar": "アバターを変更 ({name})"
+  },
+  "PlayerProfile": {
+    "title": "{name}のプロフィール",
+    "score": "スコア：",
+    "pokemons": "ポケモン"
+  },
+  "PokemonOfTheDay": {
+    "title": "今日のポケモン",
+    "stats": {
+      "hp": "HP",
+      "attack": "攻撃",
+      "defense": "防御",
+      "special-attack": "特攻",
+      "special-defense": "特防",
+      "speed": "素早さ"
+    },
+    "types": {
+      "fire": "炎",
+      "water": "水",
+      "grass": "草",
+      "electric": "電気",
+      "psychic": "エスパー",
+      "ice": "氷",
+      "dragon": "ドラゴン",
+      "dark": "悪",
+      "fairy": "フェアリー",
+      "normal": "ノーマル",
+      "fighting": "格闘",
+      "flying": "飛行",
+      "poison": "毒",
+      "ground": "地面",
+      "rock": "岩",
+      "bug": "虫",
+      "ghost": "ゴースト",
+      "steel": "鋼"
+    }
+  }
+}

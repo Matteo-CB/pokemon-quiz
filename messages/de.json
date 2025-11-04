@@ -1,0 +1,139 @@
+{
+  "HeroButtons": {
+    "dashboard": "Dashboard",
+    "quiz": "Take the quiz"
+  },
+  "ListPlayers": {
+    "title": "Top 3 Players",
+    "score": "Score"
+  },
+  "StarterPicker": {
+    "chooseStarter": "Choose your starter:"
+  },
+  "FormSignIn": {
+    "title": "Create an account",
+    "loading": "Loading Pokemon...",
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "At least 8 characters"
+    },
+    "starter": {
+      "choose": "Choose your starter:",
+      "shinyInfo": "Each Pokemon has a 1 in 500 chance of being shiny. If you’re lucky, you’ll see the ✨ emoji next to its name!"
+    },
+    "buttons": {
+      "submit": "Sign up",
+      "loading": "Signing up..."
+    },
+    "login": {
+      "prompt": "Already have an account?",
+      "link": "Log in"
+    },
+    "errors": {
+      "missingFields": "Email and password are required.",
+      "passwordTooShort": "Password must be at least 8 characters long.",
+      "noStarter": "Choose your starter Pokemon!",
+      "signupFailed": "Unable to sign up.",
+      "server": "An error occurred. Please try again later."
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "Reset password",
+    "success": "Password successfully changed!",
+    "newPassword": "New password",
+    "button": "Reset",
+    "errors": {
+      "failed": "Unable to reset password."
+    }
+  },
+  "LoginPage": {
+    "title": "Login",
+    "email": {
+      "label": "Email",
+      "placeholder": "your@email.com"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Your password",
+      "forgot": "Forgot password?"
+    },
+    "buttons": {
+      "submit": "Log in",
+      "loading": "Logging in..."
+    },
+    "signup": {
+      "prompt": "Don’t have an account yet?",
+      "link": "Sign up"
+    },
+    "errors": {
+      "invalidCredentials": "Incorrect email or password."
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "Forgot password",
+    "success": "If an account exists, a link has been sent.",
+    "email": {
+      "placeholder": "Your email"
+    },
+    "button": "Send link"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "accessDenied": "Access denied",
+    "userNotFound": "User not found",
+    "currentScore": "Current score:"
+  },
+  "ProfileForm": {
+    "title": "Profile",
+    "pseudo": "Username",
+    "bio": "Bio",
+    "characters": "characters",
+    "save": "Save"
+  },
+  "PokemonGrid": {
+    "title": "Your Pokemon"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "Choose a Pokemon",
+    "changeAvatar": "Change avatar ({name})"
+  },
+  "PokemonOfTheDay": {
+    "title": "Pokemon des Tages",
+    "stats": {
+      "hp": "KP",
+      "attack": "Angriff",
+      "defense": "Verteidigung",
+      "special-attack": "Spezial-Angriff",
+      "special-defense": "Spezial-Verteidigung",
+      "speed": "Initiative"
+    },
+    "types": {
+      "fire": "Feuer",
+      "water": "Wasser",
+      "grass": "Pflanze",
+      "electric": "Elektro",
+      "psychic": "Psycho",
+      "ice": "Eis",
+      "dragon": "Drache",
+      "dark": "Unlicht",
+      "fairy": "Fee",
+      "normal": "Normal",
+      "fighting": "Kampf",
+      "flying": "Flug",
+      "poison": "Gift",
+      "ground": "Boden",
+      "rock": "Gestein",
+      "bug": "Käfer",
+      "ghost": "Geist",
+      "steel": "Stahl"
+    }
+  }
+}

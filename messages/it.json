@@ -1,0 +1,144 @@
+{
+  "HeroButtons": {
+    "dashboard": "Bacheca",
+    "quiz": "Fai il quiz"
+  },
+  "ListPlayers": {
+    "title": "Top 3 giocatori",
+    "score": "Punteggio"
+  },
+  "StarterPicker": {
+    "chooseStarter": "Scegli il tuo starter:"
+  },
+  "FormSignIn": {
+    "title": "Crea un account",
+    "loading": "Caricamento dei Pokemon...",
+    "email": {
+      "label": "Email",
+      "placeholder": "tua@email.com"
+    },
+    "name": {
+      "label": "Nome",
+      "placeholder": "Il tuo nome"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Almeno 8 caratteri"
+    },
+    "starter": {
+      "choose": "Scegli il tuo starter:",
+      "shinyInfo": "Ogni Pokemon ha 1 possibilità su 500 di essere shiny. Se sei fortunato, vedrai l’emoji ✨ accanto al suo nome!"
+    },
+    "buttons": {
+      "submit": "Registrati",
+      "loading": "Registrazione..."
+    },
+    "login": {
+      "prompt": "Hai già un account?",
+      "link": "Accedi"
+    },
+    "errors": {
+      "missingFields": "Email e password sono obbligatorie.",
+      "passwordTooShort": "La password deve avere almeno 8 caratteri.",
+      "noStarter": "Scegli il tuo Pokemon iniziale!",
+      "signupFailed": "Impossibile registrarsi.",
+      "server": "Si è verificato un errore. Riprova più tardi."
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "Reimposta la password",
+    "success": "Password cambiata con successo!",
+    "newPassword": "Nuova password",
+    "button": "Reimposta",
+    "errors": {
+      "failed": "Impossibile reimpostare la password."
+    }
+  },
+  "LoginPage": {
+    "title": "Accedi",
+    "email": {
+      "label": "Email",
+      "placeholder": "tua@email.com"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "La tua password",
+      "forgot": "Password dimenticata?"
+    },
+    "buttons": {
+      "submit": "Accedi",
+      "loading": "Accesso..."
+    },
+    "signup": {
+      "prompt": "Non hai ancora un account?",
+      "link": "Registrati"
+    },
+    "errors": {
+      "invalidCredentials": "Email o password non corretti."
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "Password dimenticata",
+    "success": "Se esiste un account, è stato inviato un link.",
+    "email": {
+      "placeholder": "La tua email"
+    },
+    "button": "Invia link"
+  },
+  "DashboardPage": {
+    "title": "Bacheca",
+    "accessDenied": "Accesso negato",
+    "userNotFound": "Utente non trovato",
+    "currentScore": "Punteggio attuale:"
+  },
+  "ProfileForm": {
+    "title": "Profilo",
+    "pseudo": "Nome utente",
+    "bio": "Bio",
+    "characters": "caratteri",
+    "save": "Salva"
+  },
+  "PokemonGrid": {
+    "title": "I tuoi Pokemon"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "Scegli un Pokemon",
+    "changeAvatar": "Cambia avatar ({name})"
+  },
+  "PlayerProfile": {
+    "title": "Profilo di {name}",
+    "score": "Punteggio:",
+    "pokemons": "Pokemon"
+  },
+  "PokemonOfTheDay": {
+    "title": "Pokemon del Giorno",
+    "stats": {
+      "hp": "PS",
+      "attack": "Attacco",
+      "defense": "Difesa",
+      "special-attack": "Attacco Speciale",
+      "special-defense": "Difesa Speciale",
+      "speed": "Velocità"
+    },
+    "types": {
+      "fire": "Fuoco",
+      "water": "Acqua",
+      "grass": "Erba",
+      "electric": "Elettro",
+      "psychic": "Psico",
+      "ice": "Ghiaccio",
+      "dragon": "Drago",
+      "dark": "Buio",
+      "fairy": "Folletto",
+      "normal": "Normale",
+      "fighting": "Lotta",
+      "flying": "Volante",
+      "poison": "Veleno",
+      "ground": "Terra",
+      "rock": "Roccia",
+      "bug": "Coleottero",
+      "ghost": "Spettro",
+      "steel": "Acciaio"
+    }
+  }
+}

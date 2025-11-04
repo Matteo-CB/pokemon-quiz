@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb" 
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String                @id @default(auto()) @map("_id") @db.ObjectId
+  email          String                @unique
+  password       String
+  name           String                @unique
+  bio            String?
+  profilePicture String
+  score          Int      @default(0)    
+  pokemons       Pokemon[]              
+  resetTokens    PasswordResetToken[]   
+}
+
+model Pokemon {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  userId            String   @db.ObjectId
+  user              User     @relation(fields: [userId], references: [id])
+
+  name              String
+  names               Json
+  isShiny             Boolean  @default(false)
+  nationalId        Int
+  generation        Int
+  type1             String
+  type2             String?
+
+  // Stats
+  hp                Int
+  attack            Int
+  defense           Int
+  spAttack          Int
+  spDefense         Int
+  speed             Int
+
+  // Sprites
+  spriteDefault     String?
+  spriteShiny       String?
+  spriteBack        String?
+  spriteBackShiny   String?
+  spriteHome        String?
+  spriteDream       String?
+  spriteOfficial    String?
+  spriteShowdown    String?
+  spriteShowdownShiny String?
+}
+
+model PasswordResetToken {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  token     String   @unique
+  userId    String   @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+}

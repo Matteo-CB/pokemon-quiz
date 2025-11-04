@@ -1,0 +1,144 @@
+{
+  "HeroButtons": {
+    "dashboard": "Dasshuboodo",
+    "quiz": "Kuizu o suru"
+  },
+  "ListPlayers": {
+    "title": "Toppu 3 pureiyaa",
+    "score": "Sukoa"
+  },
+  "StarterPicker": {
+    "chooseStarter": "Saisho no Pokemon o erande kudasai:"
+  },
+  "FormSignIn": {
+    "title": "Akaunto o sakusei",
+    "loading": "Pokemon o yomikomi chuu...",
+    "email": {
+      "label": "Meeru",
+      "placeholder": "anata@email.com"
+    },
+    "name": {
+      "label": "Namae",
+      "placeholder": "Anata no namae"
+    },
+    "password": {
+      "label": "Pasuwaado",
+      "placeholder": "8 moji ijou"
+    },
+    "starter": {
+      "choose": "Saisho no Pokemon o erande kudasai:",
+      "shinyInfo": "Kaku Pokemon wa 500 bun no 1 no kakuritsu de shiny ni narimasu. Un ga yokereba, namae no yoko ni ✨ emoji ga hyouji saremasu!"
+    },
+    "buttons": {
+      "submit": "Touroku",
+      "loading": "Touroku chuu..."
+    },
+    "login": {
+      "prompt": "Mou akaunto o motte imasu ka?",
+      "link": "Roguin"
+    },
+    "errors": {
+      "missingFields": "Meeru to pasuwaado wa hissu desu.",
+      "passwordTooShort": "Pasuwaado wa 8 moji ijou de nakereba narimasen.",
+      "noStarter": "Saisho no Pokemon o erande kudasai!",
+      "signupFailed": "Touroku dekimasen deshita.",
+      "server": "Eraa ga hassei shimashita. Ato de mou ichido otameshi kudasai."
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "Pasuwaado o risetto",
+    "success": "Pasuwaado ga seijou ni henkou saremashita!",
+    "newPassword": "Atarashii pasuwaado",
+    "button": "Risetto",
+    "errors": {
+      "failed": "Pasuwaado o risetto dekimasen deshita."
+    }
+  },
+  "LoginPage": {
+    "title": "Roguin",
+    "email": {
+      "label": "Meeru",
+      "placeholder": "anata@email.com"
+    },
+    "password": {
+      "label": "Pasuwaado",
+      "placeholder": "Anata no pasuwaado",
+      "forgot": "Pasuwaado o wasuremashita ka?"
+    },
+    "buttons": {
+      "submit": "Roguin",
+      "loading": "Roguin chuu..."
+    },
+    "signup": {
+      "prompt": "Mada akaunto o motte imasen ka?",
+      "link": "Touroku"
+    },
+    "errors": {
+      "invalidCredentials": "Meeru matawa pasuwaado ga tadashiku arimasen."
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "Pasuwaado o wasureta",
+    "success": "Akaunto ga sonzai suru baai, rinku ga soushin saremashita.",
+    "email": {
+      "placeholder": "Anata no meeru"
+    },
+    "button": "Rinku o soushin"
+  },
+  "DashboardPage": {
+    "title": "Dasshuboodo",
+    "accessDenied": "Akusesu kyohi",
+    "userNotFound": "Yuuzaa ga mitsukarimasen",
+    "currentScore": "Genzai no sukoa:"
+  },
+  "ProfileForm": {
+    "title": "Purofiiru",
+    "pseudo": "Yuuzaa mei",
+    "bio": "Jikoshoukai",
+    "characters": "moji",
+    "save": "Hozon"
+  },
+  "PokemonGrid": {
+    "title": "Anata no Pokemon"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "Pokemon o erande kudasai",
+    "changeAvatar": "Abataa o henkou ({name})"
+  },
+  "PlayerProfile": {
+    "title": "{name} no purofiiru",
+    "score": "Sukoa:",
+    "pokemons": "Pokemon"
+  },
+  "PokemonOfTheDay": {
+    "title": "Kyou no Pokemon",
+    "stats": {
+      "hp": "HP",
+      "attack": "Kougeki",
+      "defense": "Bougyo",
+      "special-attack": "Tokukou",
+      "special-defense": "Tokubou",
+      "speed": "Subayasa"
+    },
+    "types": {
+      "fire": "Honoo",
+      "water": "Mizu",
+      "grass": "Kusa",
+      "electric": "Denki",
+      "psychic": "Esupaa",
+      "ice": "Koori",
+      "dragon": "Doragon",
+      "dark": "Aku",
+      "fairy": "Fearii",
+      "normal": "Noomaru",
+      "fighting": "Kakutou",
+      "flying": "Hikou",
+      "poison": "Doku",
+      "ground": "Jimen",
+      "rock": "Iwa",
+      "bug": "Mushi",
+      "ghost": "Gosuto",
+      "steel": "Hagane"
+    }
+  }
+}

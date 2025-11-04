@@ -1,0 +1,144 @@
+{
+  "HeroButtons": {
+    "dashboard": "ダッシュボード",
+    "quiz": "クイズをする"
+  },
+  "ListPlayers": {
+    "title": "トップ3プレイヤー",
+    "score": "スコア"
+  },
+  "StarterPicker": {
+    "chooseStarter": "さいしょのポケモンをえらんでください:"
+  },
+  "FormSignIn": {
+    "title": "アカウントをさくせい",
+    "loading": "ポケモンをよみこみちゅう...",
+    "email": {
+      "label": "メール",
+      "placeholder": "あなた@email.com"
+    },
+    "name": {
+      "label": "なまえ",
+      "placeholder": "あなたのなまえ"
+    },
+    "password": {
+      "label": "パスワード",
+      "placeholder": "8もじいじょう"
+    },
+    "starter": {
+      "choose": "さいしょのポケモンをえらんでください:",
+      "shinyInfo": "かくポケモンは500ぶんの1のかくりつでいろちがいになります。うんがよければ、なまえのよこに✨がひょうじされます！"
+    },
+    "buttons": {
+      "submit": "とうろく",
+      "loading": "とうろくちゅう..."
+    },
+    "login": {
+      "prompt": "すでにアカウントをおもちですか？",
+      "link": "ログイン"
+    },
+    "errors": {
+      "missingFields": "メールとパスワードはひっすです。",
+      "passwordTooShort": "パスワードは8もじいじょうでなければなりません。",
+      "noStarter": "さいしょのポケモンをえらんでください！",
+      "signupFailed": "とうろくできませんでした。",
+      "server": "エラーがはっせいしました。あとでもういちどおためしください。"
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "パスワードをリセット",
+    "success": "パスワードがせいじょうにへんこうされました！",
+    "newPassword": "あたらしいパスワード",
+    "button": "リセット",
+    "errors": {
+      "failed": "パスワードをリセットできませんでした。"
+    }
+  },
+  "LoginPage": {
+    "title": "ログイン",
+    "email": {
+      "label": "メール",
+      "placeholder": "あなた@email.com"
+    },
+    "password": {
+      "label": "パスワード",
+      "placeholder": "あなたのパスワード",
+      "forgot": "パスワードをわすれましたか？"
+    },
+    "buttons": {
+      "submit": "ログイン",
+      "loading": "ログインちゅう..."
+    },
+    "signup": {
+      "prompt": "まだアカウントをおもちではありませんか？",
+      "link": "とうろく"
+    },
+    "errors": {
+      "invalidCredentials": "メールまたはパスワードがただしくありません。"
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "パスワードをわすれた",
+    "success": "アカウントがそんざいするばあい、リンクがそうしんされました。",
+    "email": {
+      "placeholder": "あなたのメール"
+    },
+    "button": "リンクをそうしん"
+  },
+  "DashboardPage": {
+    "title": "ダッシュボード",
+    "accessDenied": "アクセスがきょひされました",
+    "userNotFound": "ユーザーがみつかりません",
+    "currentScore": "げんざいのスコア:"
+  },
+  "ProfileForm": {
+    "title": "プロフィール",
+    "pseudo": "ユーザーめい",
+    "bio": "じこしょうかい",
+    "characters": "もじ",
+    "save": "ほぞん"
+  },
+  "PokemonGrid": {
+    "title": "あなたのポケモン"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "ポケモンをえらんでください",
+    "changeAvatar": "アバターをへんこう ({name})"
+  },
+  "PlayerProfile": {
+    "title": "{name}のプロフィール",
+    "score": "スコア：",
+    "pokemons": "ポケモン"
+  },
+  "PokemonOfTheDay": {
+    "title": "きょうのポケモン",
+    "stats": {
+      "hp": "HP",
+      "attack": "こうげき",
+      "defense": "ぼうぎょ",
+      "special-attack": "とくこう",
+      "special-defense": "とくぼう",
+      "speed": "すばやさ"
+    },
+    "types": {
+      "fire": "ほのお",
+      "water": "みず",
+      "grass": "くさ",
+      "electric": "でんき",
+      "psychic": "エスパー",
+      "ice": "こおり",
+      "dragon": "ドラゴン",
+      "dark": "あく",
+      "fairy": "フェアリー",
+      "normal": "ノーマル",
+      "fighting": "かくとう",
+      "flying": "ひこう",
+      "poison": "どく",
+      "ground": "じめん",
+      "rock": "いわ",
+      "bug": "むし",
+      "ghost": "ゴースト",
+      "steel": "はがね"
+    }
+  }
+}

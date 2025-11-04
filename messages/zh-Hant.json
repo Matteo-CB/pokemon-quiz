@@ -1,0 +1,144 @@
+{
+  "HeroButtons": {
+    "dashboard": "儀表板",
+    "quiz": "進行測驗"
+  },
+  "ListPlayers": {
+    "title": "前三名玩家",
+    "score": "分數"
+  },
+  "StarterPicker": {
+    "chooseStarter": "選擇你的初始寶可夢："
+  },
+  "FormSignIn": {
+    "title": "建立帳號",
+    "loading": "正在載入寶可夢...",
+    "email": {
+      "label": "電子郵件",
+      "placeholder": "你的@email.com"
+    },
+    "name": {
+      "label": "名字",
+      "placeholder": "你的名字"
+    },
+    "password": {
+      "label": "密碼",
+      "placeholder": "至少8個字元"
+    },
+    "starter": {
+      "choose": "選擇你的初始寶可夢：",
+      "shinyInfo": "每隻寶可夢有1/500的機率是閃光。如果你幸運，你會在名字旁邊看到✨！"
+    },
+    "buttons": {
+      "submit": "註冊",
+      "loading": "註冊中..."
+    },
+    "login": {
+      "prompt": "已經有帳號？",
+      "link": "登入"
+    },
+    "errors": {
+      "missingFields": "電子郵件和密碼是必填項。",
+      "passwordTooShort": "密碼至少需要8個字元。",
+      "noStarter": "請選擇你的初始寶可夢！",
+      "signupFailed": "無法註冊。",
+      "server": "發生錯誤，請稍後再試。"
+    }
+  },
+  "ResetPasswordPage": {
+    "title": "重設密碼",
+    "success": "密碼修改成功！",
+    "newPassword": "新密碼",
+    "button": "重設",
+    "errors": {
+      "failed": "無法重設密碼。"
+    }
+  },
+  "LoginPage": {
+    "title": "登入",
+    "email": {
+      "label": "電子郵件",
+      "placeholder": "你的@email.com"
+    },
+    "password": {
+      "label": "密碼",
+      "placeholder": "你的密碼",
+      "forgot": "忘記密碼？"
+    },
+    "buttons": {
+      "submit": "登入",
+      "loading": "登入中..."
+    },
+    "signup": {
+      "prompt": "還沒有帳號？",
+      "link": "註冊"
+    },
+    "errors": {
+      "invalidCredentials": "電子郵件或密碼錯誤。"
+    }
+  },
+  "ForgotPasswordPage": {
+    "title": "忘記密碼",
+    "success": "如果帳號存在，連結已發送。",
+    "email": {
+      "placeholder": "你的電子郵件"
+    },
+    "button": "發送連結"
+  },
+  "DashboardPage": {
+    "title": "儀表板",
+    "accessDenied": "拒絕存取",
+    "userNotFound": "找不到使用者",
+    "currentScore": "當前分數："
+  },
+  "ProfileForm": {
+    "title": "個人資料",
+    "pseudo": "使用者名稱",
+    "bio": "簡介",
+    "characters": "字元",
+    "save": "儲存"
+  },
+  "PokemonGrid": {
+    "title": "你的寶可夢"
+  },
+  "AvatarSelector": {
+    "choosePokemon": "選擇一隻寶可夢",
+    "changeAvatar": "更換頭像 ({name})"
+  },
+  "PlayerProfile": {
+    "title": "{name}的個人資料",
+    "score": "分數：",
+    "pokemons": "寶可夢"
+  },
+  "PokemonOfTheDay": {
+    "title": "今日的寶可夢",
+    "stats": {
+      "hp": "HP",
+      "attack": "攻擊",
+      "defense": "防禦",
+      "special-attack": "特攻",
+      "special-defense": "特防",
+      "speed": "速度"
+    },
+    "types": {
+      "fire": "火",
+      "water": "水",
+      "grass": "草",
+      "electric": "電",
+      "psychic": "超能力",
+      "ice": "冰",
+      "dragon": "龍",
+      "dark": "惡",
+      "fairy": "妖精",
+      "normal": "一般",
+      "fighting": "格鬥",
+      "flying": "飛行",
+      "poison": "毒",
+      "ground": "地面",
+      "rock": "岩石",
+      "bug": "蟲",
+      "ghost": "幽靈",
+      "steel": "鋼"
+    }
+  }
+}
