@@ -1,100 +1,100 @@
 {
   "HeroButtons": {
-    "dashboard": "Dasshuboodo",
+    "dashboard": "Dasshubōdo",
     "quiz": "Kuizu o suru"
   },
   "ListPlayers": {
-    "title": "Toppu 3 pureiyaa",
+    "title": "Toppu 3 pureiyā",
     "score": "Sukoa"
   },
   "StarterPicker": {
     "chooseStarter": "Saisho no Pokemon o erande kudasai:"
   },
   "FormSignIn": {
-    "title": "Akaunto o sakusei",
-    "loading": "Pokemon o yomikomi chuu...",
+    "title": "Akaunto sakusei",
+    "loading": "Pokemon o yomikomi-chū...",
     "email": {
-      "label": "Meeru",
-      "placeholder": "anata@email.com"
+      "label": "Mēruadoresu",
+      "placeholder": "your@email.com"
     },
     "name": {
       "label": "Namae",
       "placeholder": "Anata no namae"
     },
     "password": {
-      "label": "Pasuwaado",
-      "placeholder": "8 moji ijou"
+      "label": "Pasuwādo",
+      "placeholder": "8-moji ijō"
     },
     "starter": {
       "choose": "Saisho no Pokemon o erande kudasai:",
-      "shinyInfo": "Kaku Pokemon wa 500 bun no 1 no kakuritsu de shiny ni narimasu. Un ga yokereba, namae no yoko ni ✨ emoji ga hyouji saremasu!"
+      "shinyInfo": "Kaku Pokemon ni wa 500-bun'no 1 no kakuritsu de irochigai ga shutsugen shimasu. Un ga yokereba, namae no yoko ni ✨ no emoji ga hyōji saremasu!"
     },
     "buttons": {
-      "submit": "Touroku",
-      "loading": "Touroku chuu..."
+      "submit": "Tōroku",
+      "loading": "Tōroku-chū..."
     },
     "login": {
-      "prompt": "Mou akaunto o motte imasu ka?",
+      "prompt": "Sude ni akaunto o omochi desu ka?",
       "link": "Roguin"
     },
     "errors": {
-      "missingFields": "Meeru to pasuwaado wa hissu desu.",
-      "passwordTooShort": "Pasuwaado wa 8 moji ijou de nakereba narimasen.",
+      "missingFields": "Mēruadoresu to pasuwādo wa hissu desu.",
+      "passwordTooShort": "Pasuwādo wa 8-moji ijōdearu hitsuyō ga arimasu.",
       "noStarter": "Saisho no Pokemon o erande kudasai!",
-      "signupFailed": "Touroku dekimasen deshita.",
-      "server": "Eraa ga hassei shimashita. Ato de mou ichido otameshi kudasai."
+      "signupFailed": "Tōroku ni shippai shimashita.",
+      "server": "Erā ga hassei shimashita. Atode mōichido o tameshi kudasai."
     }
   },
   "ResetPasswordPage": {
-    "title": "Pasuwaado o risetto",
-    "success": "Pasuwaado ga seijou ni henkou saremashita!",
-    "newPassword": "Atarashii pasuwaado",
+    "title": "Pasuwādo o risetto",
+    "success": "Pasuwādo ga seijō ni henkō saremashita!",
+    "newPassword": "Atarashī pasuwādo",
     "button": "Risetto",
     "errors": {
-      "failed": "Pasuwaado o risetto dekimasen deshita."
+      "failed": "Pasuwādo no risetto ni shippai shimashita."
     }
   },
   "LoginPage": {
     "title": "Roguin",
     "email": {
-      "label": "Meeru",
-      "placeholder": "anata@email.com"
+      "label": "Mēruadoresu",
+      "placeholder": "your@email.com"
     },
     "password": {
-      "label": "Pasuwaado",
-      "placeholder": "Anata no pasuwaado",
-      "forgot": "Pasuwaado o wasuremashita ka?"
+      "label": "Pasuwādo",
+      "placeholder": "Anata no pasuwādo",
+      "forgot": "Pasuwādo o o wasuredesu ka?"
     },
     "buttons": {
       "submit": "Roguin",
-      "loading": "Roguin chuu..."
+      "loading": "Roguin-chū..."
     },
     "signup": {
-      "prompt": "Mada akaunto o motte imasen ka?",
-      "link": "Touroku"
+      "prompt": "Mada akaunto o omochi de wa arimasen ka?",
+      "link": "Tōroku"
     },
     "errors": {
-      "invalidCredentials": "Meeru matawa pasuwaado ga tadashiku arimasen."
+      "invalidCredentials": "Mēruadoresu matawa pasuwādo ga machigatteimasu."
     }
   },
   "ForgotPasswordPage": {
-    "title": "Pasuwaado o wasureta",
-    "success": "Akaunto ga sonzai suru baai, rinku ga soushin saremashita.",
+    "title": "Pasuwādo o o wasuredesu ka",
+    "success": "Akaunto ga sonzai suru baai, rinku ga sōshin saremashita.",
     "email": {
-      "placeholder": "Anata no meeru"
+      "placeholder": "Anata no mēruadoresu"
     },
-    "button": "Rinku o soushin"
+    "button": "Rinku o sōshin"
   },
   "DashboardPage": {
-    "title": "Dasshuboodo",
-    "accessDenied": "Akusesu kyohi",
-    "userNotFound": "Yuuzaa ga mitsukarimasen",
+    "title": "Dasshubōdo",
+    "accessDenied": "Akusesu ga kyohi saremashita",
+    "userNotFound": "Yūzā ga mitsukarimasen",
     "currentScore": "Genzai no sukoa:"
   },
   "ProfileForm": {
-    "title": "Purofiiru",
-    "pseudo": "Yuuzaa mei",
-    "bio": "Jikoshoukai",
+    "title": "Purofīru",
+    "pseudo": "Nikkunēmu",
+    "bio": "Jiko shōkai",
     "characters": "moji",
     "save": "Hozon"
   },
@@ -102,43 +102,159 @@
     "title": "Anata no Pokemon"
   },
   "AvatarSelector": {
-    "choosePokemon": "Pokemon o erande kudasai",
-    "changeAvatar": "Abataa o henkou ({name})"
+    "choosePokemon": "Pokemon o erabu",
+    "changeAvatar": "Abatā o henkō ({name})"
   },
   "PlayerProfile": {
-    "title": "{name} no purofiiru",
+    "title": "{name} no purofīru",
     "score": "Sukoa:",
     "pokemons": "Pokemon"
   },
   "PokemonOfTheDay": {
-    "title": "Kyou no Pokemon",
+    "title": "Kyō no Pokemon",
     "stats": {
+      "toggleTitle": "Sutētasu o hyōji",
       "hp": "HP",
-      "attack": "Kougeki",
-      "defense": "Bougyo",
-      "special-attack": "Tokukou",
-      "special-defense": "Tokubou",
+      "attack": "Kōgeki",
+      "defense": "Bōgyo",
+      "special-attack": "Toku-kō",
+      "special-defense": "Toku-bō",
       "speed": "Subayasa"
     },
     "types": {
-      "fire": "Honoo",
+      "fire": "Honō",
       "water": "Mizu",
       "grass": "Kusa",
       "electric": "Denki",
-      "psychic": "Esupaa",
-      "ice": "Koori",
+      "psychic": "Esupā",
+      "ice": "Kōri",
       "dragon": "Doragon",
       "dark": "Aku",
-      "fairy": "Fearii",
-      "normal": "Noomaru",
-      "fighting": "Kakutou",
-      "flying": "Hikou",
+      "fairy": "Fearī",
+      "normal": "Nōmaru",
+      "fighting": "Kakutō",
+      "flying": "Hikō",
       "poison": "Doku",
       "ground": "Jimen",
       "rock": "Iwa",
       "bug": "Mushi",
-      "ghost": "Gosuto",
+      "ghost": "Gōsuto",
       "steel": "Hagane"
     }
+  },
+  "Metadata": {
+    "title": "Pokekuizu - Anata no Pokemon chishiki o tamesō",
+    "description": "Korekushon to ninshō shisutemu o sonaeta Pokemon kuizu."
+  },
+  "Header": {
+    "quizLink": "Kuizu",
+    "collectionLink": "Pokemon Zukan",
+    "welcome": "Yōkoso",
+    "signOut": "Roguauto",
+    "signIn": "Roguin",
+    "changeLanguage": "Gengo o kirikaeru",
+    "trainerFallback": "Torēnā"
+  },
+  "Footer": {
+    "madeBy": "Sakuseisha",
+    "poweredBy": "Powered by",
+    "disclaimer": "Pokemon・Pokémon wa Nintendō no shōhyō desu.",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. Zen chosakuken shoyū.",
+    "hostedBy": "Hosutingu",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "Hōteki tsūchi",
+    "privacyPolicy": "Puraibashī porishī",
+    "termsOfUse": "Riyō kiyaku",
+    "termsOfSale": "Hanbai kiyaku"
+  },
+  "HomePage": {
+    "subtitle": "Anata no chishiki o tameshi, Pokemon Zukan o kansei sa se, saikō no torēnā ni narou!",
+    "pokemonOfTheDay": "Kyō no Pokemon",
+    "featuresTitle": "Omona kinō",
+    "features": {
+      "quiz": {
+        "title": "Museigen no kuizu",
+        "description": "Subete no sedai no Pokemon gēmu ni kansuru shitsumon ni kotaeyou."
+      },
+      "collection": {
+        "title": "Korekushon o tsukurou",
+        "description": "Seikai suru goto ni, atarashī Pokemon o tsukamaeru chansu ga arimasu."
+      },
+      "leaderboard": {
+        "title": "Torēnā rankingu",
+        "description": "Anata no sukoa to korekushon o hoka no pureiyā to hikaku shiyou."
+      }
+    },
+    "howToPlayTitle": "Asobikata",
+    "howToPlay": {
+      "step1": {
+        "title": "Saisho no Pokemon o erabu",
+        "description": "Muryō de tōroku shite, shinkō jōkyō to korekushon o hozon shimashou."
+      },
+      "step2": {
+        "title": "Kuizu o hajimeru",
+        "description": "Sukinasedai o erande, anata no chishiki o tameshite mimashou."
+      },
+      "step3": {
+        "title": "Minna getto da ze!",
+        "description": "Tadashiku kotaete Pokemon o atsume, Pokemon Zukan o kansei sa semashou."
+      }
+    },
+    "leaderboardTitle": "Toppu torēnā",
+    "starters": {
+      "title": "Bōken o hajimeyou!",
+      "subtitle": "Akaunto o sakusei shite, saisho no Pokemon o atsumemashou... Anata wa kōundeshou ka?",
+      "loading": "Ōkido hakase ga anata no Pokemon o junbi shite imasu..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "Pokedoru - Pokemon o ateyou!",
+    "title": "Dare da?",
+    "subtitle": "8-kai no chōsen de nazo no Pokemon o ateyou.",
+    "inputPlaceholder": "Pokemon no namae o nyūryoku...",
+    "silhouetteAlt": "Nazo no Pokemon no shiruetto",
+    "winMessage": "Omedetō! Mitsuketa ne!",
+    "loseMessage": "Zannen... Seikai wa {name} deshita.",
+    "login": "Roguin",
+    "signin": "Akaunto sakusei",
+    "viewPokedex": "Pokemon Zukan o miru",
+    "header": {
+      "pokemon": "Pokemon",
+      "generation": "Sedai",
+      "type1": "Taipu 1",
+      "type2": "Taipu 2",
+      "height": "Takasa",
+      "weight": "Omosa"
+    },
+    "reward": {
+      "unauthenticated": "Roguin matawa akaunto o sakusei shite sukoa o hozon shi, kono Pokemon o tsukamaeru chansu o getto shiyō!",
+      "tooManyAttempts": "Mitsuketa ne! Demo, Pokemon o tsukamaeru ni wa 4-kai miman de ateru hitsuyō ga arimasu.",
+      "new": "{name} o tsukamaete, {score} pointo kakutoku!",
+      "alreadyOwned": "Sude ni {name} o motteimasu ga, {score} pointo kakutoku!",
+      "upgrade": "Sugoi! Irochigai no {name} o tsukamaete, {score} pointo kakutoku! Pokemon Zukan ga kōshin saremashita.",
+      "shiny": "Irochigai da!",
+      "error": "Pokemon no tsuika-chū ni erā ga hassei shimashita."
+    }
+  },
+  "AltText": {
+    "mysdibule": "Kuchiito no kazari",
+    "starterPokemon": "Sutātā Pokemon supuraito"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

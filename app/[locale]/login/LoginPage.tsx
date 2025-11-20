@@ -4,6 +4,7 @@ import { signIn } from "next-auth/react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import HowToPlay from "@/components/homepage/HowToPlay";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -42,7 +43,6 @@ export default function LoginPage() {
         onSubmit={handleLogin}
         className="space-y-4 bg-neutral-900 p-6 rounded-xl text-neutral-50"
       >
-        {/* Email */}
         <div>
           <label
             htmlFor="email"
@@ -60,8 +60,6 @@ export default function LoginPage() {
             required
           />
         </div>
-
-        {/* Mot de passe */}
         <div>
           <label
             htmlFor="password"
@@ -78,7 +76,6 @@ export default function LoginPage() {
             placeholder={t("password.placeholder")}
             required
           />
-          {/* Lien mot de passe oublié */}
           <div className="mt-2 text-right">
             <a
               href="/forgot-password"

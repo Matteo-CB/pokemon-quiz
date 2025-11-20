@@ -5,6 +5,10 @@ import Providers from "../providers";
 import GridBg from "@/components/GridBg";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import Header from "@/components/layout/Header";
+import { getTranslations } from "next-intl/server";
+import Footer from "@/components/layout/Footer";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,10 +20,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Pokémon App",
-  description: "Application multilingue avec Next.js et next-intl",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -28,7 +39,6 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  // ✅ On attend la Promise pour récupérer la locale
   const { locale } = await params;
 
   let messages;
@@ -41,13 +51,20 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full`}
     >
-      <body>
+      <body className="flex flex-col min-h-screen h-full relative">
         <Providers>
-          <GridBg />
+          <div className="fixed inset-0 -z-10">
+            <GridBg />
+          </div>
           <NextIntlClientProvider locale={locale} messages={messages}>
-            {children}
+            <Header />
+            <main className="grow relative z-10 my-10">
+              {children}
+              <Toaster richColors />
+            </main>
+            <Footer />
           </NextIntlClientProvider>
         </Providers>
       </body>

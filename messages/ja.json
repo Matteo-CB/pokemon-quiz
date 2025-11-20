@@ -8,14 +8,14 @@
     "score": "スコア"
   },
   "StarterPicker": {
-    "chooseStarter": "最初のポケモンを選んでください:"
+    "chooseStarter": "最初のポケモンを選んでください："
   },
   "FormSignIn": {
-    "title": "アカウントを作成",
+    "title": "アカウント作成",
     "loading": "ポケモンを読み込み中...",
     "email": {
-      "label": "メール",
-      "placeholder": "あなた@email.com"
+      "label": "メールアドレス",
+      "placeholder": "your@email.com"
     },
     "name": {
       "label": "名前",
@@ -26,8 +26,8 @@
       "placeholder": "8文字以上"
     },
     "starter": {
-      "choose": "最初のポケモンを選んでください:",
-      "shinyInfo": "各ポケモンは500分の1の確率で色違いになります。運が良ければ、名前の横に✨が表示されます！"
+      "choose": "最初のポケモンを選んでください：",
+      "shinyInfo": "各ポケモンには500分の1の確率で色違いが出現します。運が良ければ、名前の横に✨の絵文字が表示されます！"
     },
     "buttons": {
       "submit": "登録",
@@ -38,10 +38,10 @@
       "link": "ログイン"
     },
     "errors": {
-      "missingFields": "メールとパスワードは必須です。",
-      "passwordTooShort": "パスワードは8文字以上でなければなりません。",
+      "missingFields": "メールアドレスとパスワードは必須です。",
+      "passwordTooShort": "パスワードは8文字以上である必要があります。",
       "noStarter": "最初のポケモンを選んでください！",
-      "signupFailed": "登録できませんでした。",
+      "signupFailed": "登録に失敗しました。",
       "server": "エラーが発生しました。後でもう一度お試しください。"
     }
   },
@@ -51,19 +51,19 @@
     "newPassword": "新しいパスワード",
     "button": "リセット",
     "errors": {
-      "failed": "パスワードをリセットできませんでした。"
+      "failed": "パスワードのリセットに失敗しました。"
     }
   },
   "LoginPage": {
     "title": "ログイン",
     "email": {
-      "label": "メール",
-      "placeholder": "あなた@email.com"
+      "label": "メールアドレス",
+      "placeholder": "your@email.com"
     },
     "password": {
       "label": "パスワード",
       "placeholder": "あなたのパスワード",
-      "forgot": "パスワードを忘れましたか？"
+      "forgot": "パスワードをお忘れですか？"
     },
     "buttons": {
       "submit": "ログイン",
@@ -74,14 +74,14 @@
       "link": "登録"
     },
     "errors": {
-      "invalidCredentials": "メールまたはパスワードが正しくありません。"
+      "invalidCredentials": "メールアドレスまたはパスワードが間違っています。"
     }
   },
   "ForgotPasswordPage": {
-    "title": "パスワードを忘れた",
+    "title": "パスワードをお忘れですか",
     "success": "アカウントが存在する場合、リンクが送信されました。",
     "email": {
-      "placeholder": "あなたのメール"
+      "placeholder": "あなたのメールアドレス"
     },
     "button": "リンクを送信"
   },
@@ -89,11 +89,11 @@
     "title": "ダッシュボード",
     "accessDenied": "アクセスが拒否されました",
     "userNotFound": "ユーザーが見つかりません",
-    "currentScore": "現在のスコア:"
+    "currentScore": "現在のスコア："
   },
   "ProfileForm": {
     "title": "プロフィール",
-    "pseudo": "ユーザー名",
+    "pseudo": "ニックネーム",
     "bio": "自己紹介",
     "characters": "文字",
     "save": "保存"
@@ -102,7 +102,7 @@
     "title": "あなたのポケモン"
   },
   "AvatarSelector": {
-    "choosePokemon": "ポケモンを選んでください",
+    "choosePokemon": "ポケモンを選ぶ",
     "changeAvatar": "アバターを変更 ({name})"
   },
   "PlayerProfile": {
@@ -113,32 +113,148 @@
   "PokemonOfTheDay": {
     "title": "今日のポケモン",
     "stats": {
+      "toggleTitle": "ステータスを表示",
       "hp": "HP",
-      "attack": "攻撃",
-      "defense": "防御",
-      "special-attack": "特攻",
-      "special-defense": "特防",
-      "speed": "素早さ"
+      "attack": "こうげき",
+      "defense": "ぼうぎょ",
+      "special-attack": "とくこう",
+      "special-defense": "とくぼう",
+      "speed": "すばやさ"
     },
     "types": {
-      "fire": "炎",
-      "water": "水",
-      "grass": "草",
-      "electric": "電気",
+      "fire": "ほのお",
+      "water": "みず",
+      "grass": "くさ",
+      "electric": "でんき",
       "psychic": "エスパー",
-      "ice": "氷",
+      "ice": "こおり",
       "dragon": "ドラゴン",
-      "dark": "悪",
+      "dark": "あく",
       "fairy": "フェアリー",
       "normal": "ノーマル",
-      "fighting": "格闘",
-      "flying": "飛行",
-      "poison": "毒",
-      "ground": "地面",
-      "rock": "岩",
-      "bug": "虫",
+      "fighting": "かくとう",
+      "flying": "ひこう",
+      "poison": "どく",
+      "ground": "じめん",
+      "rock": "いわ",
+      "bug": "むし",
       "ghost": "ゴースト",
-      "steel": "鋼"
+      "steel": "はがね"
     }
+  },
+  "Metadata": {
+    "title": "ポケクイズ - あなたのポケモン知識を試そう",
+    "description": "コレクションと認証システムを備えたポケモンクイズ。"
+  },
+  "Header": {
+    "quizLink": "クイズ",
+    "collectionLink": "ポケモン図鑑",
+    "welcome": "ようこそ",
+    "signOut": "ログアウト",
+    "signIn": "ログイン",
+    "changeLanguage": "言語を切り替える",
+    "trainerFallback": "トレーナー"
+  },
+  "Footer": {
+    "madeBy": "作成者",
+    "poweredBy": "Powered by",
+    "disclaimer": "ポケモン・Pokémonは任天堂の商標です。",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. 全著作権所有。",
+    "hostedBy": "ホスティング",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "法的通知",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfUse": "利用規約",
+    "termsOfSale": "販売規約"
+  },
+  "HomePage": {
+    "subtitle": "あなたの知識を試し、ポケモン図鑑を完成させ、最高のトレーナーになろう！",
+    "pokemonOfTheDay": "今日のポケモン",
+    "featuresTitle": "主な機能",
+    "features": {
+      "quiz": {
+        "title": "無制限のクイズ",
+        "description": "すべての世代のポケモンゲームに関する質問に答えよう。"
+      },
+      "collection": {
+        "title": "コレクションを作ろう",
+        "description": "正解するごとに、新しいポケモンを捕まえるチャンスがあります。"
+      },
+      "leaderboard": {
+        "title": "トレーナーランキング",
+        "description": "あなたのスコアとコレクションを他のプレイヤーと比較しよう。"
+      }
+    },
+    "howToPlayTitle": "遊び方",
+    "howToPlay": {
+      "step1": {
+        "title": "最初のポケモンを選ぶ",
+        "description": "無料で登録して、進行状況とコレクションを保存しましょう。"
+      },
+      "step2": {
+        "title": "クイズを始める",
+        "description": "好きな世代を選んで、あなたの知識を試してみましょう。"
+      },
+      "step3": {
+        "title": "みんなゲットだぜ！",
+        "description": "正しく答えてポケモンを集め、ポケモン図鑑を完成させましょう。"
+      }
+    },
+    "leaderboardTitle": "トップトレーナー",
+    "starters": {
+      "title": "冒険を始めよう！",
+      "subtitle": "アカウントを作成して、最初のポケモンを集めましょう... あなたは幸運でしょうか？",
+      "loading": "オーキド博士があなたのポケモンを準備しています..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "ポケドル - ポケモンを当てよう！",
+    "title": "だれだ？",
+    "subtitle": "8回の挑戦で謎のポケモンを当てよう。",
+    "inputPlaceholder": "ポケモンの名前を入力...",
+    "silhouetteAlt": "謎のポケモンのシルエット",
+    "winMessage": "おめでとう！見つけたね！",
+    "loseMessage": "残念... 正解は{name}でした。",
+    "login": "ログイン",
+    "signin": "アカウント作成",
+    "viewPokedex": "ポケモン図鑑を見る",
+    "header": {
+      "pokemon": "ポケモン",
+      "generation": "世代",
+      "type1": "タイプ1",
+      "type2": "タイプ2",
+      "height": "高さ",
+      "weight": "重さ"
+    },
+    "reward": {
+      "unauthenticated": "ログインまたはアカウントを作成してスコアを保存し、このポケモンを捕まえるチャンスをゲットしよう！",
+      "tooManyAttempts": "見つけたね！でも、ポケモンを捕まえるには4回未満で当てる必要があります。",
+      "new": "{name}を捕まえて、{score}ポイント獲得！",
+      "alreadyOwned": "すでに{name}を持っていますが、{score}ポイント獲得！",
+      "upgrade": "すごい！色違いの{name}を捕まえて、{score}ポイント獲得！ポケモン図鑑が更新されました。",
+      "shiny": "色違いだ！",
+      "error": "ポケモンの追加中にエラーが発生しました。"
+    }
+  },
+  "AltText": {
+    "mysdibule": "クチートの飾り",
+    "starterPokemon": "スターターポケモンスプライト"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

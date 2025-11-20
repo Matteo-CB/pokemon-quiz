@@ -1,8 +1,12 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../api/auth/[...nextauth]/route";
 import { PrismaClient } from "@prisma/client";
+import { PokemonWithNames, PokemonNames } from "@/types/pokemon";
 import DashboardClient from "./DashboardClient";
-import { PokemonWithNames } from "@/types/pokemon";
+import {
+  getLevelFromScore,
+  getTotalScoreForLevel,
+} from "@/lib/leveling-system";
 
 const globalForPrisma = global as unknown as { prisma: PrismaClient };
 const prisma = globalForPrisma.prisma || new PrismaClient();
@@ -11,24 +15,59 @@ if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
 
+  const defaultLevelScore = getTotalScoreForLevel(1);
+
   if (!session) {
-    // On passe juste une info minimale au client
-    return <DashboardClient session={null} user={null} pokemons={[]} />;
+    return (
+      <DashboardClient
+        session={null}
+        user={null}
+        currentLevel={0}
+        currentLevelScore={0}
+        nextLevelScore={defaultLevelScore}
+      />
+    );
   }
 
-  const user = await prisma.user.findUnique({
+  const userWithRawPokemons = await prisma.user.findUnique({
     where: { email: session.user?.email ?? "" },
     include: { pokemons: true },
   });
 
-  if (!user) {
-    return <DashboardClient session={session} user={null} pokemons={[]} />;
+  if (!userWithRawPokemons) {
+    return (
+      <DashboardClient
+        session={session}
+        user={null}
+        currentLevel={0}
+        currentLevelScore={0}
+        nextLevelScore={defaultLevelScore}
+      />
+    );
   }
 
-  const pokemons: PokemonWithNames[] = user.pokemons.map((p) => ({
-    ...p,
-    names: (p.names ?? {}) as Record<string, string>,
-  }));
+  const correctlyTypedPokemons: PokemonWithNames[] =
+    userWithRawPokemons.pokemons.map((p) => ({
+      ...p,
+      names: (p.names ?? {}) as PokemonNames,
+    }));
 
-  return <DashboardClient session={session} user={user} pokemons={pokemons} />;
+  const user = {
+    ...userWithRawPokemons,
+    pokemons: correctlyTypedPokemons,
+  };
+
+  const currentLevel = getLevelFromScore(user.score);
+  const currentLevelScore = getTotalScoreForLevel(currentLevel);
+  const nextLevelScore = getTotalScoreForLevel(currentLevel + 1);
+
+  return (
+    <DashboardClient
+      session={session}
+      user={user}
+      currentLevel={currentLevel}
+      currentLevelScore={currentLevelScore}
+      nextLevelScore={nextLevelScore}
+    />
+  );
 }

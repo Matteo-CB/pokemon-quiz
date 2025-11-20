@@ -1,24 +1,24 @@
 {
   "HeroButtons": {
     "dashboard": "儀表板",
-    "quiz": "進行測驗"
+    "quiz": "開始測驗"
   },
   "ListPlayers": {
-    "title": "前三名玩家",
+    "title": "前 3 名玩家",
     "score": "分數"
   },
   "StarterPicker": {
     "chooseStarter": "選擇你的初始寶可夢："
   },
   "FormSignIn": {
-    "title": "建立帳號",
+    "title": "建立帳戶",
     "loading": "正在載入寶可夢...",
     "email": {
       "label": "電子郵件",
-      "placeholder": "你的@email.com"
+      "placeholder": "your@email.com"
     },
     "name": {
-      "label": "名字",
+      "label": "名稱",
       "placeholder": "你的名字"
     },
     "password": {
@@ -27,22 +27,22 @@
     },
     "starter": {
       "choose": "選擇你的初始寶可夢：",
-      "shinyInfo": "每隻寶可夢有1/500的機率是閃光。如果你幸運，你會在名字旁邊看到✨！"
+      "shinyInfo": "每隻寶可夢有500分之1的機率是異色寶可夢。如果幸運的話，你會在它的名字旁邊看到✨表情符號！"
     },
     "buttons": {
       "submit": "註冊",
       "loading": "註冊中..."
     },
     "login": {
-      "prompt": "已經有帳號？",
+      "prompt": "已經有帳戶了？",
       "link": "登入"
     },
     "errors": {
-      "missingFields": "電子郵件和密碼是必填項。",
-      "passwordTooShort": "密碼至少需要8個字元。",
+      "missingFields": "電子郵件和密碼是必需的。",
+      "passwordTooShort": "密碼必須至少包含8個字元。",
       "noStarter": "請選擇你的初始寶可夢！",
-      "signupFailed": "無法註冊。",
-      "server": "發生錯誤，請稍後再試。"
+      "signupFailed": "註冊失敗。",
+      "server": "發生了錯誤。請稍後再試。"
     }
   },
   "ResetPasswordPage": {
@@ -58,7 +58,7 @@
     "title": "登入",
     "email": {
       "label": "電子郵件",
-      "placeholder": "你的@email.com"
+      "placeholder": "your@email.com"
     },
     "password": {
       "label": "密碼",
@@ -70,32 +70,32 @@
       "loading": "登入中..."
     },
     "signup": {
-      "prompt": "還沒有帳號？",
+      "prompt": "還沒有帳戶？",
       "link": "註冊"
     },
     "errors": {
-      "invalidCredentials": "電子郵件或密碼錯誤。"
+      "invalidCredentials": "電子郵件或密碼不正確。"
     }
   },
   "ForgotPasswordPage": {
     "title": "忘記密碼",
-    "success": "如果帳號存在，連結已發送。",
+    "success": "如果帳戶存在，連結已傳送。",
     "email": {
       "placeholder": "你的電子郵件"
     },
-    "button": "發送連結"
+    "button": "傳送連結"
   },
   "DashboardPage": {
     "title": "儀表板",
-    "accessDenied": "拒絕存取",
-    "userNotFound": "找不到使用者",
-    "currentScore": "當前分數："
+    "accessDenied": "存取被拒",
+    "userNotFound": "未找到使用者",
+    "currentScore": "目前分數："
   },
   "ProfileForm": {
     "title": "個人資料",
-    "pseudo": "使用者名稱",
+    "pseudo": "暱稱",
     "bio": "簡介",
-    "characters": "字元",
+    "characters": "個字元",
     "save": "儲存"
   },
   "PokemonGrid": {
@@ -111,8 +111,9 @@
     "pokemons": "寶可夢"
   },
   "PokemonOfTheDay": {
-    "title": "今日的寶可夢",
+    "title": "今日寶可夢",
     "stats": {
+      "toggleTitle": "顯示統計數據",
       "hp": "HP",
       "attack": "攻擊",
       "defense": "防禦",
@@ -140,5 +141,120 @@
       "ghost": "幽靈",
       "steel": "鋼"
     }
+  },
+  "Metadata": {
+    "title": "寶可夢問答 - 測試你的寶可夢知識",
+    "description": "一個帶有收集和認證系統的寶可夢問答。"
+  },
+  "Header": {
+    "quizLink": "測驗",
+    "collectionLink": "寶可夢圖鑑",
+    "welcome": "歡迎",
+    "signOut": "登出",
+    "signIn": "登入",
+    "changeLanguage": "切換語言",
+    "trainerFallback": "訓練家"
+  },
+  "Footer": {
+    "madeBy": "創作者",
+    "poweredBy": "技術支援",
+    "disclaimer": "寶可夢和寶可夢角色名稱是任天堂的商標。",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. 版權所有。",
+    "hostedBy": "託管方",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "法律聲明",
+    "privacyPolicy": "隱私政策",
+    "termsOfUse": "使用條款",
+    "termsOfSale": "銷售條款"
+  },
+  "HomePage": {
+    "subtitle": "測試你的知識，完成你的寶可夢圖鑑，成為最強的訓練家！",
+    "pokemonOfTheDay": "今日寶可夢",
+    "featuresTitle": "主要功能",
+    "features": {
+      "quiz": {
+        "title": "無限測驗",
+        "description": "回答有關所有世代寶可夢遊戲的問題。"
+      },
+      "collection": {
+        "title": "建立你的收藏",
+        "description": "每個正確答案都有機會讓你捕捉到新的寶可夢。"
+      },
+      "leaderboard": {
+        "title": "訓練家排行榜",
+        "description": "將你的分數和收藏與其他玩家進行比較。"
+      }
+    },
+    "howToPlayTitle": "怎麼玩？",
+    "howToPlay": {
+      "step1": {
+        "title": "選擇一隻初始寶可夢",
+        "description": "免費註冊以儲存您的進度和收藏。"
+      },
+      "step2": {
+        "title": "開始測驗",
+        "description": "選擇你最喜歡的世代並測試你的知識。"
+      },
+      "step3": {
+        "title": "把牠們都抓起來！",
+        "description": "透過正確回答來收集寶可夢並完成你的圖鑑。"
+      }
+    },
+    "leaderboardTitle": "頂尖訓練家",
+    "starters": {
+      "title": "開始你的冒險！",
+      "subtitle": "創建一個帳戶來收集你的第一隻寶可夢... 你會幸運嗎？",
+      "loading": "大木博士正在準備你的寶可夢..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "Pokedle - 猜猜寶可夢！",
+    "title": "牠是誰？",
+    "subtitle": "你有8次機會猜出神秘的寶可夢。",
+    "inputPlaceholder": "輸入寶可夢的名字...",
+    "silhouetteAlt": "神秘寶可夢的剪影",
+    "winMessage": "恭喜！你找到了！",
+    "loseMessage": "太可惜了... 寶可夢是{name}。",
+    "login": "登入",
+    "signin": "註冊",
+    "viewPokedex": "查看我的圖鑑",
+    "header": {
+      "pokemon": "寶可夢",
+      "generation": "世代",
+      "type1": "屬性1",
+      "type2": "屬性2",
+      "height": "身高",
+      "weight": "體重"
+    },
+    "reward": {
+      "unauthenticated": "登入或建立帳戶以儲存您的分數並有機會捕捉這隻寶可夢！",
+      "tooManyAttempts": "你找到了！但你需要少於4次嘗試才能捕捉寶可夢。",
+      "new": "你抓住了{name}並獲得了{score}分！",
+      "alreadyOwned": "你已經擁有{name}了，但你獲得了{score}分！",
+      "upgrade": "太棒了！你抓到了一隻異色的{name}並獲得了{score}分！你的圖鑑已更新。",
+      "shiny": "牠是異色的！",
+      "error": "新增寶可夢時出錯。"
+    }
+  },
+  "AltText": {
+    "mysdibule": "大嘴娃裝飾",
+    "starterPokemon": "初始寶可夢精靈圖"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

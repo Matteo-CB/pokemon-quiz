@@ -1,24 +1,24 @@
 {
   "HeroButtons": {
     "dashboard": "仪表板",
-    "quiz": "进行测验"
+    "quiz": "开始测验"
   },
   "ListPlayers": {
-    "title": "前三名玩家",
+    "title": "前 3 名玩家",
     "score": "分数"
   },
   "StarterPicker": {
     "chooseStarter": "选择你的初始宝可梦："
   },
   "FormSignIn": {
-    "title": "创建账户",
+    "title": "创建帐户",
     "loading": "正在加载宝可梦...",
     "email": {
-      "label": "邮箱",
-      "placeholder": "你的@email.com"
+      "label": "电子邮件",
+      "placeholder": "your@email.com"
     },
     "name": {
-      "label": "名字",
+      "label": "名称",
       "placeholder": "你的名字"
     },
     "password": {
@@ -27,38 +27,38 @@
     },
     "starter": {
       "choose": "选择你的初始宝可梦：",
-      "shinyInfo": "每只宝可梦有1/500的几率是闪光。如果你幸运，你会在名字旁边看到✨！"
+      "shinyInfo": "每只宝可梦有500分之1的几率是闪光宝可梦。如果幸运的话，你会在它的名字旁边看到✨表情符号！"
     },
     "buttons": {
       "submit": "注册",
       "loading": "注册中..."
     },
     "login": {
-      "prompt": "已经有账户？",
+      "prompt": "已经有帐户了？",
       "link": "登录"
     },
     "errors": {
-      "missingFields": "邮箱和密码是必填项。",
-      "passwordTooShort": "密码至少需要8个字符。",
+      "missingFields": "电子邮件和密码是必需的。",
+      "passwordTooShort": "密码必须至少包含8个字符。",
       "noStarter": "请选择你的初始宝可梦！",
-      "signupFailed": "无法注册。",
-      "server": "发生错误，请稍后再试。"
+      "signupFailed": "注册失败。",
+      "server": "发生了错误。请稍后再试。"
     }
   },
   "ResetPasswordPage": {
-    "title": "重置密码",
+    "title": "重设密码",
     "success": "密码修改成功！",
     "newPassword": "新密码",
-    "button": "重置",
+    "button": "重设",
     "errors": {
-      "failed": "无法重置密码。"
+      "failed": "无法重设密码。"
     }
   },
   "LoginPage": {
     "title": "登录",
     "email": {
-      "label": "邮箱",
-      "placeholder": "你的@email.com"
+      "label": "电子邮件",
+      "placeholder": "your@email.com"
     },
     "password": {
       "label": "密码",
@@ -70,18 +70,18 @@
       "loading": "登录中..."
     },
     "signup": {
-      "prompt": "还没有账户？",
+      "prompt": "还没有帐户？",
       "link": "注册"
     },
     "errors": {
-      "invalidCredentials": "邮箱或密码错误。"
+      "invalidCredentials": "电子邮件或密码不正确。"
     }
   },
   "ForgotPasswordPage": {
     "title": "忘记密码",
-    "success": "如果账户存在，链接已发送。",
+    "success": "如果帐户存在，链接已发送。",
     "email": {
-      "placeholder": "你的邮箱"
+      "placeholder": "你的电子邮件"
     },
     "button": "发送链接"
   },
@@ -93,16 +93,16 @@
   },
   "ProfileForm": {
     "title": "个人资料",
-    "pseudo": "用户名",
+    "pseudo": "昵称",
     "bio": "简介",
-    "characters": "字符",
+    "characters": "个字符",
     "save": "保存"
   },
   "PokemonGrid": {
     "title": "你的宝可梦"
   },
   "AvatarSelector": {
-    "choosePokemon": "选择一个宝可梦",
+    "choosePokemon": "选择一只宝可梦",
     "changeAvatar": "更换头像 ({name})"
   },
   "PlayerProfile": {
@@ -111,8 +111,9 @@
     "pokemons": "宝可梦"
   },
   "PokemonOfTheDay": {
-    "title": "今日的宝可梦",
+    "title": "今日宝可梦",
     "stats": {
+      "toggleTitle": "显示统计数据",
       "hp": "HP",
       "attack": "攻击",
       "defense": "防御",
@@ -140,5 +141,120 @@
       "ghost": "幽灵",
       "steel": "钢"
     }
+  },
+  "Metadata": {
+    "title": "宝可梦问答 - 测试你的宝可梦知识",
+    "description": "一个带有收集和认证系统的宝可梦问答。"
+  },
+  "Header": {
+    "quizLink": "测验",
+    "collectionLink": "宝可梦图鉴",
+    "welcome": "欢迎",
+    "signOut": "退出登录",
+    "signIn": "登录",
+    "changeLanguage": "切换语言",
+    "trainerFallback": "训练家"
+  },
+  "Footer": {
+    "madeBy": "创建者",
+    "poweredBy": "技术支持",
+    "disclaimer": "宝可梦和宝可梦角色名称是任天堂的商标。",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. 版权所有。",
+    "hostedBy": "托管方",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "法律声明",
+    "privacyPolicy": "隐私政策",
+    "termsOfUse": "使用条款",
+    "termsOfSale": "销售条款"
+  },
+  "HomePage": {
+    "subtitle": "测试你的知识，完成你的宝可梦图鉴，成为最强的训练家！",
+    "pokemonOfTheDay": "今日宝可梦",
+    "featuresTitle": "主要功能",
+    "features": {
+      "quiz": {
+        "title": "无限测验",
+        "description": "回答有关所有世代宝可梦游戏的问题。"
+      },
+      "collection": {
+        "title": "建立你的收藏",
+        "description": "每个正确答案都有机会让你捕捉到新的宝可梦。"
+      },
+      "leaderboard": {
+        "title": "训练家排行榜",
+        "description": "将你的分数和收藏与其他玩家进行比较。"
+      }
+    },
+    "howToPlayTitle": "怎么玩？",
+    "howToPlay": {
+      "step1": {
+        "title": "选择一只初始宝可梦",
+        "description": "免费注册以保存您的进度和收藏。"
+      },
+      "step2": {
+        "title": "开始测验",
+        "description": "选择你最喜欢的世代并测试你的知识。"
+      },
+      "step3": {
+        "title": "把它们都抓起来！",
+        "description": "通过正确回答来收集宝可梦并完成你的图鉴。"
+      }
+    },
+    "leaderboardTitle": "顶尖训练家",
+    "starters": {
+      "title": "开始你的冒险！",
+      "subtitle": "创建一个帐户来收集你的第一只宝可梦... 你会幸运吗？",
+      "loading": "大木博士正在准备你的宝可梦..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "Pokedle - 猜猜宝可梦！",
+    "title": "它是谁？",
+    "subtitle": "你有8次机会猜出神秘的宝可梦。",
+    "inputPlaceholder": "输入宝可梦的名字...",
+    "silhouetteAlt": "神秘宝可梦的剪影",
+    "winMessage": "恭喜！你找到了！",
+    "loseMessage": "太可惜了... 宝可梦是{name}。",
+    "login": "登录",
+    "signin": "注册",
+    "viewPokedex": "查看我的图鉴",
+    "header": {
+      "pokemon": "宝可梦",
+      "generation": "世代",
+      "type1": "属性1",
+      "type2": "属性2",
+      "height": "身高",
+      "weight": "体重"
+    },
+    "reward": {
+      "unauthenticated": "登录或创建帐户以保存您的分数并有机会捕捉这只宝可梦！",
+      "tooManyAttempts": "你找到了！但你需要少于4次尝试才能捕捉宝可梦。",
+      "new": "你抓住了{name}并获得了{score}分！",
+      "alreadyOwned": "你已经拥有{name}了，但你获得了{score}分！",
+      "upgrade": "太棒了！你抓到了一只闪光的{name}并获得了{score}分！你的图鉴已更新。",
+      "shiny": "它是闪光的！",
+      "error": "添加宝可梦时出错。"
+    }
+  },
+  "AltText": {
+    "mysdibule": "大嘴娃装饰",
+    "starterPokemon": "初始宝可梦精灵图"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

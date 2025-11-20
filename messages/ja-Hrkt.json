@@ -8,14 +8,14 @@
     "score": "スコア"
   },
   "StarterPicker": {
-    "chooseStarter": "さいしょのポケモンをえらんでください:"
+    "chooseStarter": "さいしょのポケモンをえらんでください："
   },
   "FormSignIn": {
-    "title": "アカウントをさくせい",
+    "title": "アカウントさくせい",
     "loading": "ポケモンをよみこみちゅう...",
     "email": {
-      "label": "メール",
-      "placeholder": "あなた@email.com"
+      "label": "メールアドレス",
+      "placeholder": "your@email.com"
     },
     "name": {
       "label": "なまえ",
@@ -26,8 +26,8 @@
       "placeholder": "8もじいじょう"
     },
     "starter": {
-      "choose": "さいしょのポケモンをえらんでください:",
-      "shinyInfo": "かくポケモンは500ぶんの1のかくりつでいろちがいになります。うんがよければ、なまえのよこに✨がひょうじされます！"
+      "choose": "さいしょのポケモンをえらんでください：",
+      "shinyInfo": "かくポケモンには500ぶんの1のかくりつでいろちがいがしゅつげんします。うんがよければ、なまえのよこに✨のえもじがひょうじされます！"
     },
     "buttons": {
       "submit": "とうろく",
@@ -38,10 +38,10 @@
       "link": "ログイン"
     },
     "errors": {
-      "missingFields": "メールとパスワードはひっすです。",
-      "passwordTooShort": "パスワードは8もじいじょうでなければなりません。",
+      "missingFields": "メールアドレスとパスワードはひっすです。",
+      "passwordTooShort": "パスワードは8もじいじょうであるひつようがあります。",
       "noStarter": "さいしょのポケモンをえらんでください！",
-      "signupFailed": "とうろくできませんでした。",
+      "signupFailed": "とうろくにしっぱいしました。",
       "server": "エラーがはっせいしました。あとでもういちどおためしください。"
     }
   },
@@ -51,19 +51,19 @@
     "newPassword": "あたらしいパスワード",
     "button": "リセット",
     "errors": {
-      "failed": "パスワードをリセットできませんでした。"
+      "failed": "パスワードのリセットにしっぱいしました。"
     }
   },
   "LoginPage": {
     "title": "ログイン",
     "email": {
-      "label": "メール",
-      "placeholder": "あなた@email.com"
+      "label": "メールアドレス",
+      "placeholder": "your@email.com"
     },
     "password": {
       "label": "パスワード",
       "placeholder": "あなたのパスワード",
-      "forgot": "パスワードをわすれましたか？"
+      "forgot": "パスワードをおわすれですか？"
     },
     "buttons": {
       "submit": "ログイン",
@@ -74,26 +74,26 @@
       "link": "とうろく"
     },
     "errors": {
-      "invalidCredentials": "メールまたはパスワードがただしくありません。"
+      "invalidCredentials": "メールアドレスまたはパスワードがまちがっています。"
     }
   },
   "ForgotPasswordPage": {
-    "title": "パスワードをわすれた",
+    "title": "パスワードをおわすれですか",
     "success": "アカウントがそんざいするばあい、リンクがそうしんされました。",
     "email": {
-      "placeholder": "あなたのメール"
+      "placeholder": "あなたのメールアドレス"
     },
     "button": "リンクをそうしん"
   },
   "DashboardPage": {
     "title": "ダッシュボード",
-    "accessDenied": "アクセスがきょひされました",
+    "accessDenied": "アクセスがキョヒされました",
     "userNotFound": "ユーザーがみつかりません",
-    "currentScore": "げんざいのスコア:"
+    "currentScore": "げんざいのスコア："
   },
   "ProfileForm": {
     "title": "プロフィール",
-    "pseudo": "ユーザーめい",
+    "pseudo": "ニックネーム",
     "bio": "じこしょうかい",
     "characters": "もじ",
     "save": "ほぞん"
@@ -102,7 +102,7 @@
     "title": "あなたのポケモン"
   },
   "AvatarSelector": {
-    "choosePokemon": "ポケモンをえらんでください",
+    "choosePokemon": "ポケモンをえらぶ",
     "changeAvatar": "アバターをへんこう ({name})"
   },
   "PlayerProfile": {
@@ -113,6 +113,7 @@
   "PokemonOfTheDay": {
     "title": "きょうのポケモン",
     "stats": {
+      "toggleTitle": "ステータスをひょうじ",
       "hp": "HP",
       "attack": "こうげき",
       "defense": "ぼうぎょ",
@@ -140,5 +141,120 @@
       "ghost": "ゴースト",
       "steel": "はがね"
     }
+  },
+  "Metadata": {
+    "title": "ポケクイズ - あなたのポケモンちしきをためそう",
+    "description": "コレクションとにんしょうシステムをそなえたポケモンクイズ。"
+  },
+  "Header": {
+    "quizLink": "クイズ",
+    "collectionLink": "ポケモンずかん",
+    "welcome": "ようこそ",
+    "signOut": "ログアウト",
+    "signIn": "ログイン",
+    "changeLanguage": "げんごをきりかえる",
+    "trainerFallback": "トレーナー"
+  },
+  "Footer": {
+    "madeBy": "さくせいしゃ",
+    "poweredBy": "Powered by",
+    "disclaimer": "ポケモン・Pokémonはにんてんどうのしょうひょうです。",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. ぜんちょさくけんしょゆう。",
+    "hostedBy": "ホスティング",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "ほうてきつうち",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfUse": "りようきやく",
+    "termsOfSale": "はんばいきやく"
+  },
+  "HomePage": {
+    "subtitle": "あなたのちしきをためし、ポケモンずかんをかんせいさせ、さいこうのトレーナーになろう！",
+    "pokemonOfTheDay": "きょうのポケモン",
+    "featuresTitle": "おもなきのう",
+    "features": {
+      "quiz": {
+        "title": "むせいげんのクイズ",
+        "description": "すべてのせだいのポケモンゲームにかんするしつもんにこたえよう。"
+      },
+      "collection": {
+        "title": "コレクションをつくろう",
+        "description": "せいかいするごとに、あたらしいポケモンをつかまえるチャンスがあります。"
+      },
+      "leaderboard": {
+        "title": "トレーナーランキング",
+        "description": "あなたのスコアとコレクションをほかのプレイヤーとひかくしよう。"
+      }
+    },
+    "howToPlayTitle": "あそびかた",
+    "howToPlay": {
+      "step1": {
+        "title": "さいしょのポケモンをえらぶ",
+        "description": "むりょうでとうろくして、しんこうじょうきょうとコレクションをほぞんしましょう。"
+      },
+      "step2": {
+        "title": "クイズをはじめる",
+        "description": "すきなせだいを選んで、あなたのちしきをためしてみましょう。"
+      },
+      "step3": {
+        "title": "みんなゲットだぜ！",
+        "description": "ただしくこたえてポケモンをあつめ、ポケモンずかんをかんせいさせましょう。"
+      }
+    },
+    "leaderboardTitle": "トップトレーナー",
+    "starters": {
+      "title": "ぼうけんをはじめよう！",
+      "subtitle": "アカウントをさくせいして、さいしょのポケモンをあつめましょう... あなたはこううんでしょうか？",
+      "loading": "オーキドはかせがあなたのポケモンをじゅんびしています..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "ポケドル - ポケモンをあてよう！",
+    "title": "だれだ？",
+    "subtitle": "8かいのちょうせんでなぞのポケモンをあてよう。",
+    "inputPlaceholder": "ポケモンのなまえをにゅうりょく...",
+    "silhouetteAlt": "なぞのポケモンのシルエット",
+    "winMessage": "おめでとう！みつけたね！",
+    "loseMessage": "ざんねん... せいかいは{name}でした。",
+    "login": "ログイン",
+    "signin": "アカウントさくせい",
+    "viewPokedex": "ポケモンずかんをみる",
+    "header": {
+      "pokemon": "ポケモン",
+      "generation": "せだい",
+      "type1": "タイプ1",
+      "type2": "タイプ2",
+      "height": "たかさ",
+      "weight": "おもさ"
+    },
+    "reward": {
+      "unauthenticated": "ログインまたはアカウントをさくせいしてスコアをほぞんし、このポケモンをつかまえるチャンスをゲットしよう！",
+      "tooManyAttempts": "みつけたね！でも、ポケモンをつかまえるには4かいみまんであてるひつようがあります。",
+      "new": "{name}をつかまえて、{score}ポイントかくとく！",
+      "alreadyOwned": "すでに{name}をもっていますが、{score}ポイントかくとく！",
+      "upgrade": "すごい！いろちがいの{name}をつかまえて、{score}ポイントかくとく！ポケモンずかんがこうしんされました。",
+      "shiny": "いろちがいだ！",
+      "error": "ポケモンのついかちゅうにエラーがはっせいしました。"
+    }
+  },
+  "AltText": {
+    "mysdibule": "クチートのかざり",
+    "starterPokemon": "スターターポケモンスプライト"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

@@ -11,7 +11,6 @@ interface ShowdownSpriteProps {
 export function ShowdownSprite({ src, alt }: ShowdownSpriteProps) {
   const [size, setSize] = useState<32 | 64 | null>(null);
 
-  // Dimensions calculées
   const dimension = size === 64 ? 128 : 96;
 
   return (
@@ -23,8 +22,8 @@ export function ShowdownSprite({ src, alt }: ShowdownSpriteProps) {
       className="pixelated"
       unoptimized
       style={{
-        width: "auto", // ✅ indique que la largeur s’adapte
-        height: "auto", // ✅ indique que la hauteur s’adapte
+        width: "auto",
+        height: "auto",
       }}
       onLoad={(event) => {
         const img = event.currentTarget as HTMLImageElement;

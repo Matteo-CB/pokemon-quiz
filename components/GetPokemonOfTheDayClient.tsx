@@ -5,6 +5,10 @@ import { SparklesText } from "./ui/sparkles-text";
 import Image from "next/image";
 import { ShowdownSprite } from "./ShowdownSprite";
 import { useTranslations, useLocale } from "next-intl";
+import { ShineBorder } from "./ui/shine-border";
+import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface Props {
   pokemon: PokemonOfTheDay;
@@ -18,27 +22,38 @@ function getStatColor(value: number): string {
   return "bg-green-600";
 }
 
-export default function GetPokemonOfTheDayClient({ pokemon }: Props) {
-  const t = useTranslations("PokemonOfTheDay");
-  const locale = useLocale();
+export default function GetPokemonOfTheDayClient({
+  pokemon,
+}: Props): React.JSX.Element {
+  const t: (key: string) => string = useTranslations("PokemonOfTheDay");
+  const locale: string = useLocale();
+  const [isStatsOpen, setIsStatsOpen] = useState<boolean>(false);
 
-  // Choisir le nom et la description selon la locale courante
-  const localizedName =
-    pokemon.names.find((n) => n.language === locale)?.name ??
-    pokemon.names.find((n) => n.language === "en")?.name ??
+  const localizedName: string =
+    pokemon.names.find(
+      (n: { language: string; name: string }): boolean => n.language === locale
+    )?.name ??
+    pokemon.names.find(
+      (n: { language: string; name: string }): boolean => n.language === "en"
+    )?.name ??
     pokemon.names[0]?.name;
 
-  const localizedDescription =
-    pokemon.descriptions.find((d) => d.language === locale)?.text ??
-    pokemon.descriptions.find((d) => d.language === "en")?.text ??
+  const localizedDescription: string =
+    pokemon.descriptions.find(
+      (d: { language: string; text: string }): boolean => d.language === locale
+    )?.text ??
+    pokemon.descriptions.find(
+      (d: { language: string; text: string }): boolean => d.language === "en"
+    )?.text ??
     "No description available.";
 
   return (
-    <div className=" text-center bg-neutral-800/40 p-7 m-3 rounded-xl">
+    <div className="relative text-center bg-linear-to-br from-neutral-900 to-neutral-950 p-7 mt-0 m-3 rounded-xl">
+      <ShineBorder shineColor={["#7B2FF7", "#F107A3", "#FF6FB5"]} />
       <SparklesText className="text-4xl">{t("title")}</SparklesText>
       <h3 className="text-xl font-semibold">{localizedName}</h3>
 
-      <div className="mt-6 flex flex-col md:flex-row md:justify-between md:items-between md:gap-10">
+      <div className="mt-6 flex flex-col md:flex-row md:justify-between md:items-start md:gap-10">
         <div className="md:w-1/2">
           <div className="flex justify-center gap-6 my-4 h-32">
             <ShowdownSprite src={pokemon.sprite} alt={localizedName} />
@@ -47,7 +62,9 @@ export default function GetPokemonOfTheDayClient({ pokemon }: Props) {
               alt={`${localizedName} shiny`}
             />
           </div>
-          <p className="mt-4 italic text-neutral-400">{localizedDescription}</p>
+          <p className="mt-4 italic max-w-[800px] text-neutral-400">
+            {localizedDescription}
+          </p>
 
           <div className="flex justify-center gap-3 mt-4">
             <Image
@@ -69,11 +86,31 @@ export default function GetPokemonOfTheDayClient({ pokemon }: Props) {
           </div>
         </div>
 
-        <div className="mt-6 md:mt-0 md:w-1/2">
-          <ul className="space-y-3 max-w-md mx-auto md:mx-0 px-4">
-            {pokemon.stats.map((s: PokemonStat) => {
-              const percentage = Math.min((s.value / 255) * 100, 100);
-              const colorClass = getStatColor(s.value);
+        <div className="mt-6 md:mt-0 md:w-1/2 flex flex-col items-center">
+          <button
+            type="button"
+            className="flex md:hidden justify-between items-center w-full bg-neutral-800 p-3 rounded-lg mb-4"
+            onClick={(): void => setIsStatsOpen(!isStatsOpen)}
+          >
+            <span className="font-bold">{t("stats.toggleTitle")}</span>
+            <ChevronDown
+              className={cn(
+                "h-5 w-5 transition-transform duration-300",
+                isStatsOpen && "rotate-180"
+              )}
+            />
+          </button>
+
+          <ul
+            className={cn(
+              "space-y-3 max-w-md mx-auto md:mx-0 px-4 w-full",
+              isStatsOpen ? "block" : "hidden",
+              "md:block"
+            )}
+          >
+            {pokemon.stats.map((s: PokemonStat): React.JSX.Element => {
+              const percentage: number = Math.min((s.value / 255) * 100, 100);
+              const colorClass: string = getStatColor(s.value);
 
               return (
                 <li key={s.name} className="text-left">

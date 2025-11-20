@@ -37,11 +37,11 @@ const FormSignIn = () => {
   const [selected, setSelected] = useState<Pokemon | null>(null);
   const [spritesLoaded, setSpritesLoaded] = useState(false);
   function validateName(name: string): string | null {
-    if (!name) return "Le pseudo est obligatoire";
-    if (name.length < 3) return "Le pseudo doit contenir au moins 3 caractères";
-    if (name.length > 20) return "Le pseudo ne doit pas dépasser 20 caractères";
+    if (!name) return t("errors.nameRequired"); // Utilisation de t()
+    if (name.length < 3) return t("errors.nameTooShort"); // Utilisation de t()
+    if (name.length > 20) return t("errors.nameTooLong"); // Utilisation de t()
     if (!/^[a-zA-Z0-9_]+$/.test(name)) {
-      return "Le pseudo ne peut contenir que des lettres, chiffres et underscores";
+      return t("errors.nameInvalidChars"); // Utilisation de t()
     }
     return null;
   }
@@ -154,7 +154,7 @@ const FormSignIn = () => {
     return (
       <div className="flex flex-col items-center justify-center h-screen">
         <div className="relative w-16 h-16 animate-spin">
-          <div className="absolute inset-0 rounded-full bg-linear-to-r from-purple-500 to-purple-500 [clip-path:polygon(50%_0%,100%_0%,100%_100%,50%_100%)]"></div>
+          <div className="absolute inset-0 rounded-full bg-linear-to-r from-purple-500 to-pink-500 [clip-path:polygon(50%_0%,100%_0%,100%_100%,50%_100%)]"></div>
           <div className="absolute inset-0 rounded-full bg-neutral-50 [clip-path:polygon(0%_0%,50%_0%,50%_100%,0%_100%)]"></div>
           <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-black -translate-x-1/2"></div>
           <div className="absolute inset-0 rounded-full border-4 border-black"></div>
@@ -171,9 +171,8 @@ const FormSignIn = () => {
 
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 bg-neutral-900 p-6 rounded-xl text-neutral-50"
+        className="space-y-4 bg-neutral-900 p-6 rounded-xl text-neutral-50 mx-2"
       >
-        {/* Email */}
         <div>
           <label
             htmlFor="email"
@@ -191,8 +190,6 @@ const FormSignIn = () => {
             required
           />
         </div>
-
-        {/* Nom */}
         <div>
           <label
             htmlFor="name"
@@ -210,7 +207,6 @@ const FormSignIn = () => {
           />
         </div>
 
-        {/* Mot de passe */}
         <div>
           <label
             htmlFor="password"
@@ -231,10 +227,9 @@ const FormSignIn = () => {
           />
         </div>
 
-        {/* Starter Pokémon */}
         <div>
           <p className="font-semibold mb-2">{t("starter.choose")}</p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center">
             {starters.map((p) => (
               <button
                 type="button"
@@ -245,20 +240,29 @@ const FormSignIn = () => {
                 }}
                 className={`p-2 rounded-xl border-2 transition ${
                   selected?.id === p.id
-                    ? "border-pink-500"
+                    ? p.isShiny
+                      ? "border-yellow-400 drop-shadow-[0_0_8px_rgba(253,224,71,0.7)]"
+                      : "border-purple-500"
                     : "border-transparent"
                 }`}
               >
-                <img src={p.sprite} alt={p.name} />
-                <p className="capitalize text-sm">
-                  {p.names?.fr ?? p.name} {p.isShiny && "✨"}
+                <img
+                  src={p.sprite}
+                  alt={p.name}
+                  className="w-24 h-24 object-contain"
+                />
+                <p className="capitalize text-sm text-center">
+                  {p.names?.fr ?? p.name}{" "}
+                  {p.isShiny && (
+                    <span className="text-xs font-bold text-transparent bg-clip-text bg-linear-to-r from-yellow-400 to-orange-400">
+                      ✨
+                    </span>
+                  )}
                 </p>
               </button>
             ))}
           </div>
         </div>
-
-        {/* Info shiny */}
         <p className="text-sm text-neutral-400 text-center">
           {t("starter.shinyInfo")}
         </p>
@@ -272,6 +276,27 @@ const FormSignIn = () => {
         >
           {loading ? t("buttons.loading") : t("buttons.submit")}
         </button>
+        <p className="text-xs text-neutral-500 text-center px-4">
+          {t("agreement.prefix")}{" "}
+          <a
+            href="/terms-of-use"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-400 underline hover:text-purple-300 transition"
+          >
+            {t("agreement.terms")}
+          </a>{" "}
+          {t("agreement.and")}{" "}
+          <a
+            href="/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-400 underline hover:text-purple-300 transition"
+          >
+            {t("agreement.policy")}
+          </a>
+          .
+        </p>
       </form>
 
       <p className="mt-6 text-center text-sm text-neutral-400">

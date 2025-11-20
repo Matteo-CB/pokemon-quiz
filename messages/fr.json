@@ -5,29 +5,55 @@
   },
   "ListPlayers": {
     "title": "Top 3 joueurs",
-    "score": "Score"
+    "score": "Score",
+    "viewTop100": "Voir le top 100"
+  },
+  "LeaderboardPage": {
+    "title": "Classement des Dresseurs"
+  },
+  "ShopPage": {
+    "title": "Boutique du Jour",
+    "subtitle": "La sélection de Pokémon change tous les jours !",
+    "yourBalance": "Votre Solde",
+    "shinyBoost": "Pokémon Shiny : Prix x5",
+    "buy": "Acheter",
+    "owned": "Possédé",
+    "tooExpensive": "Fonds Insuffisants",
+    "shiny": "Shiny",
+    "toast": {
+      "success": "{name} a été ajouté à votre Pokédex !",
+      "not_enough_money": "Vous n'avez pas assez de PokéPièces.",
+      "already_owned": "Vous possédez déjà ce Pokémon.",
+      "purchase_failed": "L'achat a échoué. Veuillez réessayer.",
+      "server_error": "Erreur serveur. Veuillez réessayer."
+    }
   },
   "StarterPicker": {
-    "chooseStarter": "Choisis ton starter :"
+    "chooseStarter": "Choisis ton Pokémon de départ :"
+  },
+  "Pagination": {
+    "previous": "Précédent",
+    "next": "Suivant",
+    "page": "Page {current} sur {total}"
   },
   "FormSignIn": {
     "title": "Créer un compte",
-    "loading": "Chargement des Pokemon...",
+    "loading": "Chargement des Pokémon...",
     "email": {
       "label": "Email",
       "placeholder": "ton@email.com"
     },
     "name": {
-      "label": "Nom",
-      "placeholder": "Ton nom"
+      "label": "Nom d'utilisateur",
+      "placeholder": "Ton nom d'utilisateur"
     },
     "password": {
       "label": "Mot de passe",
       "placeholder": "Au moins 8 caractères"
     },
     "starter": {
-      "choose": "Choisis ton starter :",
-      "shinyInfo": "Chaque Pokemon a 1 chance sur 500 d’être shiny. Si tu as de la chance, tu verras l’emoji ✨ à côté de son nom !"
+      "choose": "Choisis ton Pokémon de départ :",
+      "shinyInfo": "Chaque Pokémon a 1 chance sur 500 d’être shiny. Si tu as de la chance, tu verras l’emoji ✨ à côté de son nom !"
     },
     "buttons": {
       "submit": "S'inscrire",
@@ -38,11 +64,17 @@
       "link": "Connectez-vous"
     },
     "errors": {
-      "missingFields": "Email et mot de passe sont obligatoires.",
+      "missingFields": "Email, nom d'utilisateur et mot de passe sont obligatoires.",
       "passwordTooShort": "Le mot de passe doit faire au moins 8 caractères.",
-      "noStarter": "Choisis ton starter Pokemon !",
+      "noStarter": "Choisis ton Pokémon de départ !",
       "signupFailed": "Inscription impossible.",
       "server": "Une erreur est survenue. Réessaie plus tard."
+    },
+    "agreement": {
+      "prefix": "En vous inscrivant, vous acceptez nos",
+      "terms": "Conditions Générales d'Utilisation",
+      "and": "et notre",
+      "policy": "Politique de Confidentialité"
     }
   },
   "ResetPasswordPage": {
@@ -79,7 +111,7 @@
   },
   "ForgotPasswordPage": {
     "title": "Mot de passe oublié",
-    "success": "Si un compte existe, un lien a été envoyé.",
+    "success": "Si un compte existe, un lien a été envoyé à l'adresse indiquée.",
     "email": {
       "placeholder": "Ton email"
     },
@@ -89,7 +121,9 @@
     "title": "Tableau de bord",
     "accessDenied": "Accès refusé",
     "userNotFound": "Utilisateur introuvable",
-    "currentScore": "Score actuel :"
+    "currentScore": "Score actuel :",
+    "pokeMoneyBalance": "Solde PokéPièces :",
+    "viewProfileButton": "Voir mon profil"
   },
   "ProfileForm": {
     "title": "Profil",
@@ -99,22 +133,57 @@
     "save": "Sauvegarder"
   },
   "PokemonGrid": {
-    "title": "Tes Pokemon"
+    "title": "Tes Pokémon"
   },
   "AvatarSelector": {
-    "choosePokemon": "Choisis un Pokemon",
+    "choosePokemon": "Choisis un Pokémon",
     "changeAvatar": "Changer d’avatar ({name})"
   },
-
   "PlayerProfile": {
     "title": "Profil de {name}",
     "score": "Score :",
-    "pokemons": "Pokemons"
+    "pokeMoney": "PokéPièces :",
+    "pokemons": "Pokémon",
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page {current} sur {total}"
+    }
   },
-
+  "Pokedex": {
+    "title": "Mon Pokédex",
+    "subtitle": "Progrès de la collection : {count} / {total} attrapés",
+    "progress": "Complété",
+    "unknown": "???",
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant",
+      "page": "Page {current} sur {total}"
+    }
+  },
+  "RewardsPage": {
+    "title": "Paliers de Récompenses",
+    "subtitle": "Montez de niveau en jouant pour débloquer des Pokémon !",
+    "currentLevel": "Niveau {level}",
+    "currentLevelShort": "Niveau",
+    "nextLevelScore": "Prochain niveau à {score} points",
+    "nextLevelScoreShort": "Niv. Suivant",
+    "currentScore": "Votre score : {score} points",
+    "scoreToNextLevel": "{score} points restants",
+    "rewardsListTitle": "Liste des Paliers",
+    "claim": "Récupérer",
+    "claimed": "Récupéré",
+    "locked": "Verrouillé",
+    "claimAll": "Tout récupérer ({count})",
+    "scoreNeeded": "Score requis : {score}",
+    "ctaTitle": "Jouer pour monter de niveau",
+    "available": "Disponible"
+  },
   "PokemonOfTheDay": {
-    "title": "Pokemon du jour",
+    "title": "Pokémon du jour",
     "stats": {
+      "toggleTitle": "Afficher les Stats",
+      "typesTitle": "Types",
       "hp": "PV",
       "attack": "Attaque",
       "defense": "Défense",
@@ -141,6 +210,404 @@
       "bug": "Insecte",
       "ghost": "Spectre",
       "steel": "Acier"
+    }
+  },
+  "Metadata": {
+    "title": "PokeQuiz - Testez vos connaissances Pokémon",
+    "description": "Un quiz Pokémon avec un système de collection et d'authentification.",
+    "privacy": {
+      "title": "Politique de Confidentialité - PokeQuiz",
+      "description": "Consultez notre politique de confidentialité pour comprendre comment nous protégeons vos données."
+    },
+    "terms": {
+      "title": "Conditions d'Utilisation - PokeQuiz",
+      "description": "Consultez nos conditions d'utilisation."
+    },
+    "legal": {
+      "title": "Mentions Légales - PokeQuiz",
+      "description": "Consultez nos mentions légales."
+    },
+    "quiz": {
+      "title": "Centre de Quiz - PokeQuiz",
+      "description": "Testez vos connaissances Pokémon avec nos quiz stratégiques et de culture générale."
+    }
+  },
+  "LegalNoticePage": {
+    "title": "Mentions Légales",
+    "lastUpdated": "Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique.",
+    "editorTitle": "1. Éditeur du Site",
+    "editorName": "Nom : [Votre Nom/Nom de l'entreprise]",
+    "editorAddress": "Adresse : [Votre Adresse]",
+    "editorPhone": "Téléphone : [Votre Numéro de Téléphone]",
+    "editorEmail": "Email : [Votre Email de contact]",
+    "publishingDirector": "Directeur de la publication : [Nom du Directeur de la publication]",
+    "hostingTitle": "2. Hébergement",
+    "hostName": "Nom de l'Hébergeur : [Nom de l'hébergeur, ex: Vercel]",
+    "hostCompany": "Société : [Nom de la société d'hébergement]",
+    "hostAddress": "Adresse : [Adresse de la société d'hébergement]",
+    "hostContact": "Contact : [Email ou page de contact de l'hébergeur]",
+    "privacyTitle": "3. Données Personnelles",
+    "privacyContent": "La gestion de vos données personnelles est décrite dans notre Politique de Confidentialité, accessible ici :",
+    "privacyLinkText": "Politique de Confidentialité",
+    "ipTitle": "4. Propriété Intellectuelle"
+  },
+  "PrivacyPage": {
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : 9 novembre 2025",
+    "introduction": {
+      "title": "1. Introduction",
+      "p1": "Bienvenue sur PokeQuiz. Nous respectons votre vie privée et nous nous engageons à la protéger. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous visitez notre site web.",
+      "p2_prefix": "Le responsable du traitement de vos données est",
+      "p2_company": "PokeQuiz",
+      "p2_suffix": "(ci-après \"Nous\"), accessible à",
+      "p2_email": "pokequizapp@gmail.com"
+    },
+    "dataCollection": {
+      "title": "2. Les données que nous collectons",
+      "p1": "Nous collectons plusieurs types d'informations pour diverses finalités afin de fournir et d'améliorer notre service.",
+      "sectionA": {
+        "title": "A. Données fournies par vous-même",
+        "li1_title": "Informations d'identification :",
+        "li1_desc": "Lors de votre inscription, nous collectons votre nom d'utilisateur (pseudo) et votre adresse e-mail.",
+        "li2_title": "Informations de profil :",
+        "li2_desc": "Vous pouvez choisir de fournir une biographie et de sélectionner un avatar (image de profil) parmi vos Pokémon collectés."
+      },
+      "sectionB": {
+        "title": "B. Données collectées automatiquement",
+        "li1_title": "Données de jeu :",
+        "li1_desc": "Nous enregistrons votre progression dans le jeu, y compris votre score (XP), votre niveau, vos PokéPièces, les Pokémon que vous avez capturés, les récompenses de palier que vous avez réclamées, et la date de votre dernière victoire au Pokedle.",
+        "li2_title": "Données d'utilisation et Cookies :",
+        "li2_desc": "Nous pouvons utiliser des cookies de session pour maintenir votre connexion."
+      }
+    },
+    "dataUsage": {
+      "title": "3. Comment nous utilisons vos données",
+      "p1": "Nous utilisons les données collectées pour les finalités suivantes :",
+      "li1_title": "Fournir et maintenir le service :",
+      "li1_desc": "Gérer votre compte, sauvegarder votre progression et vos collections.",
+      "li2_title": "Fonctionnalités sociales :",
+      "li2_desc": "Afficher votre pseudo, votre avatar, votre score, votre niveau et votre biographie sur votre profil public et dans les classements (Top 100).",
+      "li3_title": "Gérer les récompenses :",
+      "li3_desc": "Suivre votre score pour débloquer les paliers de récompenses et gérer la limite quotidienne du Pokedle.",
+      "li4_title": "Sécurité :",
+      "li4_desc": "Gérer l'authentification et sécuriser votre compte."
+    },
+    "dataSharing": {
+      "title": "4. Partage de vos données",
+      "p1": "Nous ne vendons ni ne louons vos données personnelles.",
+      "li1_title": "Données publiques :",
+      "li1_desc": "Votre pseudo, avatar, biographie, score, niveau et collection de Pokémon sont visibles publiquement sur votre page de profil et sur le classement.",
+      "li2_title": "Hébergement :",
+      "li2_desc": "Votre site est hébergé par Vercel Inc. (USA), qui agit en tant que sous-traitant pour l'hébergement des données.",
+      "li3_title": "Données d'authentification :",
+      "li3_desc": "Nous utilisons NextAuth pour gérer l'authentification."
+    },
+    "userRights": {
+      "title": "5. Vos droits (Conformité RGPD)",
+      "p1": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :",
+      "li1_title": "Droit d'accès :",
+      "li1_desc": "Vous pouvez accéder à vos données personnelles à tout moment depuis votre Tableau de bord.",
+      "li2_title": "Droit de rectification :",
+      "li2_desc": "Vous pouvez modifier les informations de votre profil (biographie, avatar) depuis votre Tableau de bord.",
+      "li3_title": "Droit à l'effacement :",
+      "li3_desc": "Vous pouvez demander la suppression de votre compte et de toutes les données associées en nous contactant à",
+      "li3_email": "pokequizapp@gmail.com"
+    },
+    "dataSecurity": {
+      "title": "6. Sécurité des données",
+      "p1": "La sécurité de vos données est importante pour nous. Votre mot de passe est haché et n'est jamais stocké en clair."
+    },
+    "childrenPolicy": {
+      "title": "7. Politique relative aux enfants",
+      "p1": "Notre service n'est pas destiné aux personnes de moins de 16 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 16 ans."
+    },
+    "modifications": {
+      "title": "8. Modifications de cette politique",
+      "p1": "Nous pouvons mettre à jour notre politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle politique sur cette page."
+    },
+    "contact": {
+      "title": "9. Contact",
+      "p1_prefix": "Pour toute question relative à cette politique de confidentialité, veuillez nous contacter à",
+      "p1_email": "pokequizapp@gmail.com"
+    }
+  },
+  "TermsPage": {
+    "title": "Conditions Générales d'Utilisation",
+    "lastUpdated": "Dernière mise à jour : 9 novembre 2025",
+    "introduction": {
+      "p1": "Ces conditions d'utilisation (ci-après \"CGU\") régissent votre accès et votre utilisation du site web PokeQuiz (ci-après \"le Site\"). En accédant au Site ou en l'utilisant, vous acceptez d'être lié par ces CGU."
+    },
+    "acceptance": {
+      "title": "1. Acceptation des conditions",
+      "p1": "L'accès au Site est gratuit. L'utilisation des fonctionnalités interactives (Quiz, Pokedle, Paliers, etc.) nécessite la création d'un compte. En créant un compte, vous confirmez avoir lu et accepté l'intégralité des présentes CGU."
+    },
+    "userAccount": {
+      "title": "2. Compte utilisateur",
+      "p1": "Pour créer un compte, vous devez fournir une adresse e-mail valide et un nom d'utilisateur (pseudo). Vous êtes responsable de la confidentialité de votre mot de passe et de toutes les activités de votre compte. Vous acceptez de :",
+      "li1": "Fournir des informations exactes et complètes.",
+      "li2": "Ne pas usurper l'identité d'une autre personne.",
+      "li3": "Ne pas créer de pseudo à caractère offensant, haineux ou illégal."
+    },
+    "intellectualProperty": {
+      "title": "3. Propriété Intellectuelle",
+      "sectionA": {
+        "title": "A. Contenu du Site",
+        "p1": "Tous les éléments du Site (code, design, logos \"PokeQuiz\", textes) sont notre propriété exclusive."
+      },
+      "sectionB": {
+        "title": "B. Contenu de Tiers (Pokémon)",
+        "p1_prefix": "PokeQuiz est un site de fans non officiel.",
+        "p1_bold": "Pokémon et tous les noms, sprites, et marques associés sont la propriété de Nintendo, Creatures Inc., et GAME FREAK inc.",
+        "p1_suffix": "Nous ne revendiquons aucune propriété sur ce contenu. Les données sont fournies par l'API publique",
+        "p1_link_text": "PokeAPI",
+        "p1_link_url": "https://pokeapi.co/"
+      }
+    },
+    "userContent": {
+      "title": "4. Contenu utilisateur",
+      "p1": "Vous pouvez soumettre du contenu (votre biographie de profil). Vous accordez au Site une licence non exclusive et mondiale pour afficher ce contenu sur votre profil public et les classements. Vous acceptez de ne pas soumettre de contenu illégal, diffamatoire, haineux ou violant les droits d'autrui."
+    },
+    "virtualCurrency": {
+      "title": "5. Monnaie virtuelle (PokéPièces)",
+      "p1": "Le Site propose une monnaie virtuelle (\"PokéPièces\") qui peut être gagnée en jouant, notamment au Pokedle. Vous comprenez et acceptez ce qui suit :",
+      "li1_prefix": "Les PokéPièces sont une monnaie fictive de jeu et n'ont",
+      "li1_bold": "aucune valeur monétaire réelle",
+      "li1_suffix": ".",
+      "li2": "Elles ne peuvent pas être échangées contre de l'argent réel, vendues ou transférées à d'autres utilisateurs.",
+      "li3": "Elles ne peuvent être utilisées que sur le Site pour acquérir des biens virtuels (Pokémon de la Boutique du Jour)."
+    },
+    "conductRules": {
+      "title": "6. Règles de conduite",
+      "p1": "Il est interdit aux utilisateurs de :",
+      "li1": "Utiliser des scripts, des bots ou tout moyen automatisé pour jouer aux jeux, accumuler du score ou des PokéPièces.",
+      "li2": "Tenter d'exploiter des bugs ou des failles de sécurité.",
+      "li3": "Créer plusieurs comptes dans le but de manipuler le classement ou de contourner les limites de jeu (comme la récompense quotidienne du Pokedle)."
+    },
+    "termination": {
+      "title": "7. Résiliation",
+      "p1": "Nous nous réservons le droit de suspendre ou de supprimer votre compte, sans préavis, pour toute violation des présentes CGU."
+    },
+    "liabilityLimit": {
+      "title": "8. Limitation de responsabilité",
+      "p1": "Le Site est fourni \"en l'état\". Nous ne garantissons pas que le Site sera exempt d'erreurs ou d'interruptions."
+    },
+    "applicableLaw": {
+      "title": "9. Droit applicable",
+      "p1": "Les présentes CGU sont régies par le droit français."
+    },
+    "contact": {
+      "title": "10. Contact",
+      "p1_prefix": "Pour toute question relative à ces CGU, veuillez nous contacter à",
+      "p1_email": "pokequizapp@gmail.com"
+    }
+  },
+  "Header": {
+    "quizLink": "Quiz",
+    "collectionLink": "Pokedex",
+    "shopLink": "Boutique du Jour",
+    "welcome": "Bienvenue",
+    "signOut": "Déconnexion",
+    "signIn": "Connexion",
+    "signUp": "S'inscrire",
+    "changeLanguage": "Changer de langue",
+    "trainerFallback": "Dresseur",
+    "dashboardLink": "Tableau de bord"
+  },
+  "Footer": {
+    "madeBy": "Créé par",
+    "poweredBy": "Propulsé par",
+    "disclaimer": "Pokémon et les noms des personnages Pokémon sont des marques déposées de Nintendo.",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. Tous droits réservés.",
+    "hostedBy": "Hébergé par",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "Mentions Légales",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfUse": "CGU"
+  },
+  "HomePage": {
+    "subtitle": "Testez vos connaissances, complétez votre Pokédex et devenez le meilleur dresseur !",
+    "pokemonOfTheDay": "Pokémon du Jour",
+    "featuresTitle": "Fonctionnalités Principales",
+    "features": {
+      "quiz": {
+        "title": "Quiz Illimités",
+        "description": "Répondez à des questions sur les talents, les capacités, les types et la culture Pokémon."
+      },
+      "collection": {
+        "title": "Bâtissez votre Collection",
+        "description": "Chaque bonne réponse vous donne une chance d'attraper un nouveau Pokémon."
+      },
+      "leaderboard": {
+        "title": "Classement des Dresseurs",
+        "description": "Comparez votre score et votre collection avec d'autres joueurs."
+      }
+    },
+    "howToPlayTitle": "Comment Jouer ?",
+    "howToPlay": {
+      "step1": {
+        "title": "Choisissez un Pokémon de départ",
+        "description": "Inscrivez-vous gratuitement pour sauvegarder votre progression et votre collection."
+      },
+      "step2": {
+        "title": "Lancez un Quiz",
+        "description": "Choisissez vos générations préférées et testez vos connaissances."
+      },
+      "step3": {
+        "title": "Attrapez-les Tous !",
+        "description": "Collectionnez des Pokémon en répondant correctement et complétez votre Pokédex."
+      }
+    },
+    "leaderboardTitle": "Meilleurs Dresseurs",
+    "starters": {
+      "title": "Commencez votre aventure !",
+      "subtitle": "Créez un compte pour collectionner votre premier Pokémon... Serez-vous chanceux ?",
+      "loading": "Le Professeur Chen prépare vos Pokémon..."
+    },
+    "gameModes": {
+      "title": "Explorez nos modes de jeu",
+      "quiz": {
+        "title": "Quiz Classique",
+        "description": "Testez vos connaissances en solo. Devinez le Pokémon à partir de son ombre ou de son cri."
+      },
+      "pokedle": {
+        "title": "Pokedle",
+        "description": "Un nouveau Pokémon mystère à deviner chaque jour. Partagez votre score !"
+      },
+      "pokedex": {
+        "title": "Pokédex",
+        "description": "Parcourez votre collection de Pokémon attrapés et découvrez ceux qu'il vous manque."
+      },
+      "friends": {
+        "title": "Quiz entre amis",
+        "description": "Créez un salon, invitez vos amis et voyez qui est le meilleur dresseur. (Bientôt disponible)"
+      },
+      "rewards": {
+        "title": "Récompenses de Palier",
+        "description": "Gagnez des points, montez en niveau et débloquez des récompenses !"
+      }
+    },
+    "shopPromo": {
+      "title": "Boutique du Jour",
+      "subtitle": "De nouveaux Pokémon sont arrivés !",
+      "shinyBoost": "Chance Shiny !"
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "Pokedle - Devinez le Pokémon !",
+    "title": "Qui est ce Pokémon ?",
+    "subtitle": "Vous avez 20 tentatives pour deviner le Pokémon mystère.",
+    "inputPlaceholder": "Entrez un nom de Pokémon...",
+    "silhouetteAlt": "Silhouette du Pokémon mystère",
+    "winMessage": "Félicitations ! Vous avez trouvé !",
+    "loseMessage": "Dommage... Le Pokémon était {name}.",
+    "login": "Se connecter",
+    "signin": "Créer un compte",
+    "viewPokedex": "Voir mon Pokédex",
+    "header": {
+      "pokemon": "Pokémon",
+      "generation": "Gén.",
+      "type1": "Type 1",
+      "type2": "Type 2",
+      "height": "Taille",
+      "weight": "Poids",
+      "hp": "PV",
+      "attack": "Att.",
+      "defense": "Déf.",
+      "spAttack": "Atk. Spé.",
+      "spDefense": "Déf. Spé.",
+      "speed": "Vit."
+    },
+    "error": {
+      "title": "Erreur",
+      "message": "Impossible de charger le Pokedle. Veuillez réessayer plus tard."
+    },
+    "rules": {
+      "attempts": "Vous avez {max} tentatives pour deviner le Pokémon mystère.",
+      "capture": "Trouvez-le en {max} essais ou moins pour avoir une chance de le capturer !"
+    },
+    "reward": {
+      "dailyTitle": "Récompense Quotidienne",
+      "available": "Capture disponible !",
+      "countdown": "Prochaine capture dans : {time}",
+      "alreadyPlayedToday": "Vous avez déjà capturé un Pokémon aujourd'hui. Vous gagnez {score} points, mais le Pokémon n'est pas ajouté.",
+      "unauthenticated": "Connectez-vous ou créez un compte pour sauvegarder vos scores et avoir une chance de capturer ce Pokémon !",
+      "tooManyAttempts": "Vous avez trouvé ! Mais il faut le faire en 8 essais ou moins pour capturer le Pokémon.",
+      "new": "Vous avez capturé {name} et gagné {score} points et {pokeMoney} PokéPièces !",
+      "alreadyOwned": "Vous possédez déjà {name}, mais vous gagnez {score} points et {pokeMoney} PokéPièces !",
+      "upgrade": "INCROYABLE ! Vous avez capturé un {name} shiny et gagné {score} points et {pokeMoney} PokéPièces ! Votre Pokédex a été mis à jour.",
+      "shiny": "C'est un Shiny !",
+      "error": "Une erreur est survenue lors de l'ajout du Pokémon."
+    }
+  },
+  "AltText": {
+    "mysdibule": "Décoration Mysdibule",
+    "starterPokemon": "Sprite du Pokémon de départ"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
+  },
+  "QuizPage": {
+    "title": "Centre de Quiz",
+    "subtitle": "Testez vos connaissances, gagnez de l'XP, des PokéPièces, et capturez des Pokémon rares !",
+    "playButton": "Lancer le Quiz",
+    "strategic": {
+      "title": "Quiz Stratégique",
+      "description": "Devinez les talents, les capacités et maîtrisez la table des types. Pour les experts !"
+    },
+    "culture": {
+      "title": "Quiz Culture",
+      "description": "Régions, objets, évolutions, silhouettes... Connaissez-vous vraiment tout l'univers Pokémon ?"
+    },
+    "types": {
+      "talent": "Talent",
+      "ability": "Capacité",
+      "type-matchup": "Match de types",
+      "item": "Objet Mystère",
+      "silhouette": "Qui est ce Pokémon ?",
+      "generation": "Voyage dans le Temps",
+      "culture": "Culture Générale"
+    },
+    "rewards": {
+      "title": "Système de Récompenses",
+      "li1_title": "3 Récompenses par Jour",
+      "li1_desc": "Vos 3 premières sessions de quiz de la journée sont éligibles pour des récompenses de capture.",
+      "li2_title": "Capture de Pokémon",
+      "li2_desc": "Une bonne réponse sur un talent ou une capacité vous donne 1 chance sur 3 de capturer un Pokémon lié (1/500 d'être shiny).",
+      "li3_title": "Score & PokéPièces",
+      "li3_desc": "Chaque quiz réussi vous rapporte du Score (XP) pour monter en niveau et des PokéPièces pour la boutique."
+    },
+    "loading": "Génération de votre quiz...",
+    "submitting": "Correction de vos réponses...",
+    "questionCount": "Question {current} sur {total}",
+    "nextButton": "Suivant",
+    "submitButton": "Terminer le Quiz",
+    "results": {
+      "title": "Quiz Terminé !",
+      "score": "Votre score : {correct} / {total}",
+      "remaining": "Récompenses restantes aujourd'hui : {count}",
+      "xpGained": "Score (XP) Gagné",
+      "moneyGained": "PokéPièces Gagnées",
+      "pokemonCaptured": "Pokémon Capturé !",
+      "noReward": "Vous avez déjà complété vos 3 sessions de récompense aujourd'hui. Vous gagnez quand même de l'XP et des PokéPièces !",
+      "playAgain": "Rejouer",
+      "dashboard": "Tableau de bord",
+      "correctionTitle": "Correction Détaillée",
+      "yourAnswer": "Votre réponse",
+      "correctAnswer": "Bonne réponse"
     }
   }
 }

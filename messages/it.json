@@ -1,7 +1,7 @@
 {
   "HeroButtons": {
-    "dashboard": "Bacheca",
-    "quiz": "Fai il quiz"
+    "dashboard": "Dashboard",
+    "quiz": "Fai i quiz"
   },
   "ListPlayers": {
     "title": "Top 3 giocatori",
@@ -11,8 +11,8 @@
     "chooseStarter": "Scegli il tuo starter:"
   },
   "FormSignIn": {
-    "title": "Crea un account",
-    "loading": "Caricamento dei Pokemon...",
+    "title": "Crea account",
+    "loading": "Caricamento Pokémon...",
     "email": {
       "label": "Email",
       "placeholder": "tua@email.com"
@@ -27,7 +27,7 @@
     },
     "starter": {
       "choose": "Scegli il tuo starter:",
-      "shinyInfo": "Ogni Pokemon ha 1 possibilità su 500 di essere shiny. Se sei fortunato, vedrai l’emoji ✨ accanto al suo nome!"
+      "shinyInfo": "Ogni Pokémon ha 1 probabilità su 500 di essere shiny. Se sei fortunato, vedrai l'emoji ✨ accanto al suo nome!"
     },
     "buttons": {
       "submit": "Registrati",
@@ -38,16 +38,16 @@
       "link": "Accedi"
     },
     "errors": {
-      "missingFields": "Email e password sono obbligatorie.",
-      "passwordTooShort": "La password deve avere almeno 8 caratteri.",
-      "noStarter": "Scegli il tuo Pokemon iniziale!",
-      "signupFailed": "Impossibile registrarsi.",
+      "missingFields": "Email e password sono obbligatori.",
+      "passwordTooShort": "La password deve contenere almeno 8 caratteri.",
+      "noStarter": "Scegli il tuo Pokémon starter!",
+      "signupFailed": "Registrazione non riuscita.",
       "server": "Si è verificato un errore. Riprova più tardi."
     }
   },
   "ResetPasswordPage": {
-    "title": "Reimposta la password",
-    "success": "Password cambiata con successo!",
+    "title": "Reimposta password",
+    "success": "Password modificata con successo!",
     "newPassword": "Nuova password",
     "button": "Reimposta",
     "errors": {
@@ -55,7 +55,7 @@
     }
   },
   "LoginPage": {
-    "title": "Accedi",
+    "title": "Accesso",
     "email": {
       "label": "Email",
       "placeholder": "tua@email.com"
@@ -67,7 +67,7 @@
     },
     "buttons": {
       "submit": "Accedi",
-      "loading": "Accesso..."
+      "loading": "Accesso in corso..."
     },
     "signup": {
       "prompt": "Non hai ancora un account?",
@@ -86,33 +86,34 @@
     "button": "Invia link"
   },
   "DashboardPage": {
-    "title": "Bacheca",
+    "title": "Dashboard",
     "accessDenied": "Accesso negato",
     "userNotFound": "Utente non trovato",
     "currentScore": "Punteggio attuale:"
   },
   "ProfileForm": {
     "title": "Profilo",
-    "pseudo": "Nome utente",
+    "pseudo": "Nickname",
     "bio": "Bio",
     "characters": "caratteri",
     "save": "Salva"
   },
   "PokemonGrid": {
-    "title": "I tuoi Pokemon"
+    "title": "I tuoi Pokémon"
   },
   "AvatarSelector": {
-    "choosePokemon": "Scegli un Pokemon",
+    "choosePokemon": "Scegli un Pokémon",
     "changeAvatar": "Cambia avatar ({name})"
   },
   "PlayerProfile": {
     "title": "Profilo di {name}",
     "score": "Punteggio:",
-    "pokemons": "Pokemon"
+    "pokemons": "Pokémon"
   },
   "PokemonOfTheDay": {
-    "title": "Pokemon del Giorno",
+    "title": "Pokémon del giorno",
     "stats": {
+      "toggleTitle": "Mostra Statistiche",
       "hp": "PS",
       "attack": "Attacco",
       "defense": "Difesa",
@@ -140,5 +141,120 @@
       "ghost": "Spettro",
       "steel": "Acciaio"
     }
+  },
+  "Metadata": {
+    "title": "PokeQuiz - Metti alla prova la tua conoscenza Pokémon",
+    "description": "Un quiz Pokémon con sistema di collezione e autenticazione."
+  },
+  "Header": {
+    "quizLink": "Quiz",
+    "collectionLink": "Pokédex",
+    "welcome": "Benvenuto",
+    "signOut": "Esci",
+    "signIn": "Accedi",
+    "changeLanguage": "Cambia lingua",
+    "trainerFallback": "Allenatore"
+  },
+  "Footer": {
+    "madeBy": "Creato da",
+    "poweredBy": "Powered by",
+    "disclaimer": "Pokémon e i nomi dei personaggi Pokémon sono marchi di Nintendo.",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. Tutti i diritti riservati.",
+    "hostedBy": "Ospitato da",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "Note Legali",
+    "privacyPolicy": "Politica sulla Privacy",
+    "termsOfUse": "Termini di Utilizzo",
+    "termsOfSale": "Termini di Vendita"
+  },
+  "HomePage": {
+    "subtitle": "Metti alla prova la tua conoscenza, completa il tuo Pokédex e diventa il miglior allenatore!",
+    "pokemonOfTheDay": "Pokémon del Giorno",
+    "featuresTitle": "Caratteristiche Principali",
+    "features": {
+      "quiz": {
+        "title": "Quiz Illimitati",
+        "description": "Rispondi a domande su tutte le generazioni di giochi Pokémon."
+      },
+      "collection": {
+        "title": "Costruisci la tua Collezione",
+        "description": "Ogni risposta corretta ti dà la possibilità di catturare un nuovo Pokémon."
+      },
+      "leaderboard": {
+        "title": "Classifica Allenatori",
+        "description": "Confronta il tuo punteggio e la tua collezione con altri giocatori."
+      }
+    },
+    "howToPlayTitle": "Come Giocare?",
+    "howToPlay": {
+      "step1": {
+        "title": "Scegli uno starter",
+        "description": "Registrati gratuitamente per salvare i tuoi progressi e la tua collezione."
+      },
+      "step2": {
+        "title": "Inizia un Quiz",
+        "description": "Scegli le tue generazioni preferite e metti alla prova la tua conoscenza."
+      },
+      "step3": {
+        "title": "Acchiappali Tutti!",
+        "description": "Colleziona Pokémon rispondendo correttamente e completa il tuo Pokédex."
+      }
+    },
+    "leaderboardTitle": "Migliori Allenatori",
+    "starters": {
+      "title": "Inizia la tua avventura!",
+      "subtitle": "Crea un account per collezionare il tuo primo Pokémon... Sarai fortunato?",
+      "loading": "Il Professor Oak sta preparando i tuoi Pokémon..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "Pokedle - Indovina il Pokémon!",
+    "title": "Chi è quel Pokémon?",
+    "subtitle": "Hai 8 tentativi per indovinare il Pokémon misterioso.",
+    "inputPlaceholder": "Inserisci un nome Pokémon...",
+    "silhouetteAlt": "Silhouette del Pokémon misterioso",
+    "winMessage": "Congratulazioni! L'hai trovato!",
+    "loseMessage": "Peccato... Il Pokémon era {name}.",
+    "login": "Accedi",
+    "signin": "Registrati",
+    "viewPokedex": "Vedi il mio Pokédex",
+    "header": {
+      "pokemon": "Pokémon",
+      "generation": "Gen",
+      "type1": "Tipo 1",
+      "type2": "Tipo 2",
+      "height": "Altezza",
+      "weight": "Peso"
+    },
+    "reward": {
+      "unauthenticated": "Accedi o crea un account per salvare i tuoi punteggi e avere la possibilità di catturare questo Pokémon!",
+      "tooManyAttempts": "L'hai trovato! Ma devi indovinare in meno di 4 tentativi per catturare il Pokémon.",
+      "new": "Hai catturato {name} e hai guadagnato {score} punti!",
+      "alreadyOwned": "Possiedi già {name}, ma hai guadagnato {score} punti!",
+      "upgrade": "INCREDIBILE! Hai catturato un {name} shiny e hai guadagnato {score} punti! Il tuo Pokédex è stato aggiornato.",
+      "shiny": "È uno Shiny!",
+      "error": "Si è verificato un errore durante l'aggiunta del Pokémon."
+    }
+  },
+  "AltText": {
+    "mysdibule": "Decorazione Mawile",
+    "starterPokemon": "Sprite del Pokémon starter"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

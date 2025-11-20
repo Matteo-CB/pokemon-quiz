@@ -6,7 +6,6 @@ interface Props {
   locale: string;
 }
 
-// Composant serveur Next.js
 export default async function GetPokemonOfTheDayServer({
   locale,
 }: Props): Promise<ReactElement> {

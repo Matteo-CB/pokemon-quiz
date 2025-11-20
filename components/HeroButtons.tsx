@@ -20,7 +20,7 @@ export default function HeroButtons() {
   };
 
   return (
-    <div className="py-20 flex gap-3 md:gap-5 relative">
+    <div className="py-10 flex gap-3 md:gap-5 relative">
       <Button
         onClick={handleDashboardClick}
         variant="outline"

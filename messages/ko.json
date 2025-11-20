@@ -8,14 +8,14 @@
     "score": "점수"
   },
   "StarterPicker": {
-    "chooseStarter": "스타터 포켓몬을 선택하세요:"
+    "chooseStarter": "스타팅 포켓몬을 선택하세요:"
   },
   "FormSignIn": {
-    "title": "계정 만들기",
-    "loading": "포켓몬 불러오는 중...",
+    "title": "계정 생성",
+    "loading": "포켓몬 로딩 중...",
     "email": {
       "label": "이메일",
-      "placeholder": "you@email.com"
+      "placeholder": "your@email.com"
     },
     "name": {
       "label": "이름",
@@ -23,11 +23,11 @@
     },
     "password": {
       "label": "비밀번호",
-      "placeholder": "최소 8자 이상"
+      "placeholder": "8자 이상"
     },
     "starter": {
-      "choose": "스타터 포켓몬을 선택하세요:",
-      "shinyInfo": "각 포켓몬은 500분의 1 확률로 색이 다른 포켓몬(샤이니)입니다. 운이 좋으면 이름 옆에 ✨ 이모지가 표시됩니다!"
+      "choose": "스타팅 포켓몬을 선택하세요:",
+      "shinyInfo": "각 포켓몬은 500분의 1 확률로 색이 다른 포켓몬(shiny)일 수 있습니다. 운이 좋다면 이름 옆에 ✨ 이모티콘이 표시됩니다!"
     },
     "buttons": {
       "submit": "가입하기",
@@ -39,10 +39,10 @@
     },
     "errors": {
       "missingFields": "이메일과 비밀번호는 필수입니다.",
-      "passwordTooShort": "비밀번호는 최소 8자 이상이어야 합니다.",
-      "noStarter": "스타터 포켓몬을 선택하세요!",
-      "signupFailed": "가입할 수 없습니다.",
-      "server": "오류가 발생했습니다. 나중에 다시 시도하세요."
+      "passwordTooShort": "비밀번호는 8자 이상이어야 합니다.",
+      "noStarter": "스타팅 포켓몬을 선택하세요!",
+      "signupFailed": "가입에 실패했습니다.",
+      "server": "오류가 발생했습니다. 나중에 다시 시도해 주세요."
     }
   },
   "ResetPasswordPage": {
@@ -51,14 +51,14 @@
     "newPassword": "새 비밀번호",
     "button": "재설정",
     "errors": {
-      "failed": "비밀번호를 재설정할 수 없습니다."
+      "failed": "비밀번호를 재설정하지 못했습니다."
     }
   },
   "LoginPage": {
     "title": "로그인",
     "email": {
       "label": "이메일",
-      "placeholder": "you@email.com"
+      "placeholder": "your@email.com"
     },
     "password": {
       "label": "비밀번호",
@@ -74,26 +74,26 @@
       "link": "가입하기"
     },
     "errors": {
-      "invalidCredentials": "이메일 또는 비밀번호가 올바르지 않습니다."
+      "invalidCredentials": "이메일 또는 비밀번호가 잘못되었습니다."
     }
   },
   "ForgotPasswordPage": {
     "title": "비밀번호 찾기",
-    "success": "계정이 존재하면 링크가 전송되었습니다.",
+    "success": "계정이 존재한다면, 링크가 전송되었습니다.",
     "email": {
       "placeholder": "당신의 이메일"
     },
-    "button": "링크 보내기"
+    "button": "링크 전송"
   },
   "DashboardPage": {
     "title": "대시보드",
     "accessDenied": "접근 거부됨",
-    "userNotFound": "사용자를 찾을 수 없습니다",
+    "userNotFound": "사용자를 찾을 수 없음",
     "currentScore": "현재 점수:"
   },
   "ProfileForm": {
     "title": "프로필",
-    "pseudo": "사용자 이름",
+    "pseudo": "닉네임",
     "bio": "소개",
     "characters": "자",
     "save": "저장"
@@ -102,7 +102,7 @@
     "title": "당신의 포켓몬"
   },
   "AvatarSelector": {
-    "choosePokemon": "포켓몬을 선택하세요",
+    "choosePokemon": "포켓몬 선택",
     "changeAvatar": "아바타 변경 ({name})"
   },
   "PlayerProfile": {
@@ -113,6 +113,7 @@
   "PokemonOfTheDay": {
     "title": "오늘의 포켓몬",
     "stats": {
+      "toggleTitle": "능력치 보기",
       "hp": "HP",
       "attack": "공격",
       "defense": "방어",
@@ -140,5 +141,120 @@
       "ghost": "고스트",
       "steel": "강철"
     }
+  },
+  "Metadata": {
+    "title": "포케퀴즈 - 당신의 포켓몬 지식을 시험해보세요",
+    "description": "수집 및 인증 시스템을 갖춘 포켓몬 퀴즈입니다."
+  },
+  "Header": {
+    "quizLink": "퀴즈",
+    "collectionLink": "포켓몬 도감",
+    "welcome": "환영합니다",
+    "signOut": "로그아웃",
+    "signIn": "로그인",
+    "changeLanguage": "언어 변경",
+    "trainerFallback": "트레이너"
+  },
+  "Footer": {
+    "madeBy": "제작자",
+    "poweredBy": "Powered by",
+    "disclaimer": "Pokémon 및 Pokémon 캐릭터 이름은 Nintendo의 상표입니다.",
+    "creatorName": "DLK Digital Agency",
+    "creatorLink": "https://dlkdigitalagency.com",
+    "nextjsLink": "https://nextjs.org",
+    "pokeapiLink": "https://pokeapi.co",
+    "copyright": "© 2025 PokeQuiz. 모든 권리 보유.",
+    "hostedBy": "호스팅",
+    "vercelLink": "https://vercel.com",
+    "legalNotice": "법적 고지",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfUse": "이용약관",
+    "termsOfSale": "판매약관"
+  },
+  "HomePage": {
+    "subtitle": "당신의 지식을 시험하고, 포켓몬 도감을 완성하며 최고의 트레이너가 되어보세요!",
+    "pokemonOfTheDay": "오늘의 포켓몬",
+    "featuresTitle": "주요 기능",
+    "features": {
+      "quiz": {
+        "title": "무제한 퀴즈",
+        "description": "모든 세대의 포켓몬 게임에 대한 질문에 답해보세요."
+      },
+      "collection": {
+        "title": "컬렉션 완성하기",
+        "description": "정답을 맞힐 때마다 새로운 포켓몬을 잡을 기회가 주어집니다."
+      },
+      "leaderboard": {
+        "title": "트레이너 순위표",
+        "description": "당신의 점수와 컬렉션을 다른 플레이어와 비교해보세요."
+      }
+    },
+    "howToPlayTitle": "게임 방법",
+    "howToPlay": {
+      "step1": {
+        "title": "스타팅 포켓몬 선택",
+        "description": "무료로 가입하여 진행 상황과 컬렉션을 저장하세요."
+      },
+      "step2": {
+        "title": "퀴즈 시작",
+        "description": "좋아하는 세대를 선택하고 당신의 지식을 시험해보세요."
+      },
+      "step3": {
+        "title": "모두 잡자!",
+        "description": "정답을 맞혀 포켓몬을 수집하고 포켓몬 도감을 완성하세요."
+      }
+    },
+    "leaderboardTitle": "최고의 트레이너",
+    "starters": {
+      "title": "모험을 시작하세요!",
+      "subtitle": "계정을 만들어 첫 포켓몬을 수집하세요... 운이 좋을까요?",
+      "loading": "오박사님이 당신의 포켓몬을 준비 중입니다..."
+    }
+  },
+  "Pokedle": {
+    "metaTitle": "포케들 - 포켓몬을 맞춰보세요!",
+    "title": "이 포켓몬은 누구?",
+    "subtitle": "8번의 기회 안에 미스터리 포켓몬을 맞춰보세요.",
+    "inputPlaceholder": "포켓몬 이름 입력...",
+    "silhouetteAlt": "미스터리 포켓몬 실루엣",
+    "winMessage": "축하합니다! 맞췄어요!",
+    "loseMessage": "아쉽네요... 정답은 {name}였습니다.",
+    "login": "로그인",
+    "signin": "가입하기",
+    "viewPokedex": "내 도감 보기",
+    "header": {
+      "pokemon": "포켓몬",
+      "generation": "세대",
+      "type1": "타입 1",
+      "type2": "타입 2",
+      "height": "키",
+      "weight": "무게"
+    },
+    "reward": {
+      "unauthenticated": "로그인하거나 계정을 만들어 점수를 저장하고 이 포켓몬을 잡을 기회를 얻으세요!",
+      "tooManyAttempts": "찾았네요! 하지만 포켓몬을 잡으려면 4번 안에 맞춰야 합니다.",
+      "new": "{name}을(를) 잡고 {score}점을 획득했습니다!",
+      "alreadyOwned": "이미 {name}을(를) 가지고 있지만, {score}점을 획득했습니다!",
+      "upgrade": "굉장해요! 색이 다른 {name}을(를) 잡고 {score}점을 획득했습니다! 도감이 업데이트되었습니다.",
+      "shiny": "색이 다른 포켓몬입니다!",
+      "error": "포켓몬을 추가하는 중 오류가 발생했습니다."
+    }
+  },
+  "AltText": {
+    "mysdibule": "입치트 장식",
+    "starterPokemon": "스타팅 포켓몬 스프라이트"
+  },
+  "Locales": {
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "ja": "日本語",
+    "ja-Hrkt": "日本語 (かな)",
+    "ko": "한국어",
+    "roomaji": "Rōmaji",
+    "zh-Hans": "简体中文",
+    "zh-Hant": "繁體中文"
   }
 }

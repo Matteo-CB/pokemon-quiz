@@ -1,3 +1,5 @@
+import { getTranslations } from "next-intl/server";
+
 export interface PokemonStat {
   name: string;
   value: number;
@@ -24,7 +26,6 @@ export interface PokemonOfTheDay {
   type2?: string | null;
 }
 
-// --- Types de la PokéAPI ---
 interface PokeAPIStat {
   base_stat: number;
   stat: { name: string };
@@ -40,6 +41,9 @@ interface PokeAPISprites {
     showdown: {
       front_default: string;
       front_shiny: string;
+    };
+    "official-artwork": {
+      front_default: string;
     };
   };
 }
@@ -68,36 +72,29 @@ interface PokeAPISpecies {
   flavor_text_entries: PokeAPISpeciesFlavorText[];
 }
 
-// --- Fonction principale ---
-export async function getPokemonOfTheDay(
-  locale: string
-): Promise<PokemonOfTheDay> {
-  const today: Date = new Date();
-  const dayOfYear: number = Math.floor(
-    (today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) /
-      (1000 * 60 * 60 * 24)
-  );
+// Fonction helper pour récupérer un Pokémon spécifique
+async function fetchPokemonData(id: number): Promise<PokemonOfTheDay> {
+  // 1. Fetch des données de base
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`, {
+    next: { revalidate: 3600 }, // Cache pour 1 heure
+  });
 
-  const totalPokemon: number = 1010;
-  const pokemonId: number = (dayOfYear % totalPokemon) + 1;
-
-  // Données principales
-  const res: Response = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/${pokemonId}`
-  );
   if (!res.ok) {
-    throw new Error(`Failed to fetch Pokémon data for ID ${pokemonId}`);
+    throw new Error(`Failed to fetch Pokémon data for ID ${id}`);
   }
   const data: PokeAPIPokemon = await res.json();
 
-  // Données espèces (noms + descriptions)
-  const speciesRes: Response = await fetch(data.species.url);
+  // 2. Fetch des données de l'espèce (noms, descriptions)
+  const speciesRes = await fetch(data.species.url, {
+    next: { revalidate: 3600 },
+  });
+
   if (!speciesRes.ok) {
-    throw new Error(`Failed to fetch species data for Pokémon ID ${pokemonId}`);
+    throw new Error(`Failed to fetch species data for Pokémon ID ${id}`);
   }
   const speciesData: PokeAPISpecies = await speciesRes.json();
 
-  // Construction de l’objet final
+  // 3. Construction de l'objet
   return {
     id: data.id,
     names: speciesData.names.map((n) => ({
@@ -112,9 +109,43 @@ export async function getPokemonOfTheDay(
       name: s.stat.name,
       value: s.base_stat,
     })),
-    sprite: data.sprites.other.showdown.front_default,
+    // Fallback sur l'artwork officiel si le sprite showdown manque
+    sprite:
+      data.sprites.other.showdown.front_default ||
+      data.sprites.other["official-artwork"].front_default,
     shiny: data.sprites.other.showdown.front_shiny,
     type1: data.types.find((t) => t.slot === 1)?.type.name ?? "unknown",
     type2: data.types.find((t) => t.slot === 2)?.type.name ?? null,
   };
+}
+
+export async function getPokemonOfTheDay(
+  locale: string
+): Promise<PokemonOfTheDay> {
+  const today: Date = new Date();
+  const dayOfYear: number = Math.floor(
+    (today.getTime() - new Date(today.getFullYear(), 0, 0).getTime()) /
+      (1000 * 60 * 60 * 24)
+  );
+
+  const totalPokemon: number = 1010;
+  const pokemonId: number = (dayOfYear % totalPokemon) + 1;
+  const FALLBACK_ID = 25; // Pikachu
+
+  try {
+    // Tentative de récupération du Pokémon du jour
+    return await fetchPokemonData(pokemonId);
+  } catch (error) {
+    console.error(
+      `Error fetching Daily Pokemon (ID: ${pokemonId}). Falling back to Pikachu.`,
+      error
+    );
+    // Si ça échoue, on retourne le fallback (Pikachu) pour ne pas crash le site
+    try {
+      return await fetchPokemonData(FALLBACK_ID);
+    } catch (fallbackError) {
+      // Si même Pikachu échoue, on lance l'erreur critique
+      throw new Error("Critical: PokeAPI is completely unreachable.");
+    }
+  }
 }
